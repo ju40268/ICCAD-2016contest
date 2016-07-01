@@ -1,0 +1,1164 @@
+NEW MODULE fa32
+PORTS: a
+PORTS: b
+PORTS: cin
+PORTS: sum
+PORTS: cout
+PORTS: co15
+INPUT[31:0]: a
+INPUT[31:0]: b
+OUTPUT[31:0]: sum
+INPUT: cin
+OUTPUT: cout
+OUTPUT: co15
+WIRE: n1
+WIRE: n2
+WIRE: n3
+WIRE: n4
+WIRE: n5
+WIRE: n6
+WIRE: n7
+WIRE: n8
+WIRE: n9
+WIRE: n10
+WIRE: n11
+WIRE: n12
+WIRE: n13
+WIRE: n14
+WIRE: n15
+WIRE: n16
+WIRE: n17
+WIRE: n18
+WIRE: n19
+WIRE: n20
+WIRE: n21
+WIRE: n22
+WIRE: n23
+WIRE: n24
+WIRE: n25
+WIRE: n26
+WIRE: n27
+WIRE: n28
+WIRE: n29
+WIRE: n30
+WIRE: n31
+WIRE: n32
+WIRE: n33
+WIRE: n34
+WIRE: n35
+WIRE: n36
+WIRE: n37
+WIRE: n38
+WIRE: n39
+WIRE: n40
+WIRE: n41
+WIRE: n42
+WIRE: n43
+WIRE: n44
+WIRE: n45
+WIRE: n46
+WIRE: n47
+WIRE: n48
+WIRE: n49
+WIRE: n50
+WIRE: n51
+WIRE: n52
+WIRE: n53
+WIRE: n54
+WIRE: n55
+WIRE: n56
+WIRE: n57
+WIRE: n58
+WIRE: n59
+WIRE: n60
+WIRE: n61
+WIRE: n62
+WIRE: n63
+WIRE: n64
+WIRE: n65
+WIRE: n66
+WIRE: n67
+WIRE: n68
+WIRE: n69
+WIRE: n70
+WIRE: n71
+WIRE: n72
+WIRE: n73
+WIRE: n74
+WIRE: n75
+WIRE: n76
+WIRE: n77
+WIRE: n78
+WIRE: n79
+WIRE: n80
+WIRE: n81
+WIRE: n82
+WIRE: n83
+WIRE: n84
+WIRE: n85
+WIRE: n86
+WIRE: n87
+WIRE: n88
+WIRE: n89
+WIRE: n90
+WIRE: n91
+WIRE: n92
+WIRE: n93
+WIRE: n94
+WIRE: n95
+WIRE: n96
+WIRE: n97
+WIRE: n98
+WIRE: n99
+WIRE: n100
+WIRE: n101
+WIRE: n102
+WIRE: n103
+WIRE: n104
+WIRE: n105
+WIRE: n106
+WIRE: n107
+WIRE: n108
+WIRE: n109
+WIRE: n110
+WIRE: n111
+WIRE: n112
+WIRE: n113
+WIRE: n114
+WIRE: n115
+WIRE: n116
+WIRE: n117
+WIRE: n118
+WIRE: n119
+WIRE: n120
+WIRE: n121
+WIRE: n122
+WIRE: n123
+WIRE: n124
+WIRE: n125
+WIRE: n126
+WIRE: n127
+WIRE: n128
+WIRE: n129
+WIRE: n130
+WIRE: n131
+WIRE: n132
+WIRE: n133
+WIRE: n134
+WIRE: n135
+WIRE: n136
+WIRE: n137
+WIRE: n138
+WIRE: n139
+WIRE: n140
+WIRE: n141
+WIRE: n142
+WIRE: n143
+WIRE: n144
+WIRE: n145
+WIRE: n146
+WIRE: n147
+WIRE: n148
+WIRE: n149
+WIRE: n150
+WIRE: n151
+WIRE: n152
+WIRE: n153
+WIRE: n154
+WIRE: n155
+WIRE: n156
+WIRE: n157
+WIRE: n158
+WIRE: n159
+WIRE: n160
+WIRE: n161
+WIRE: n162
+WIRE: n163
+WIRE: n164
+WIRE: n165
+WIRE: n166
+WIRE: n167
+WIRE: n168
+WIRE: n169
+WIRE: n170
+WIRE: n171
+WIRE: n172
+WIRE: n173
+WIRE: n174
+WIRE: n175
+WIRE: n176
+WIRE: n177
+WIRE: n178
+WIRE: n179
+WIRE: n180
+WIRE: n181
+WIRE: n182
+WIRE: n183
+WIRE: n184
+WIRE: n185
+WIRE: n186
+WIRE: n187
+WIRE: n188
+WIRE: n189
+WIRE: n190
+GATE: ao22f01 U1
+	PORT: .a( n1 )
+	PORT: .b( n2 )
+	PORT: .c( n3 )
+	PORT: .d( n4 )
+	PORT: .o( sum[9] )
+GATE: ao22f01 U2
+	PORT: .a( n5 )
+	PORT: .b( n6 )
+	PORT: .c( n7 )
+	PORT: .d( n8 )
+	PORT: .o( sum[8] )
+GATE: ao22f01 U3
+	PORT: .a( n9 )
+	PORT: .b( n10 )
+	PORT: .c( n11 )
+	PORT: .d( n12 )
+	PORT: .o( sum[7] )
+GATE: ao22f01 U4
+	PORT: .a( n13 )
+	PORT: .b( n14 )
+	PORT: .c( n15 )
+	PORT: .d( n16 )
+	PORT: .o( sum[6] )
+GATE: ao22f01 U5
+	PORT: .a( n17 )
+	PORT: .b( n18 )
+	PORT: .c( n19 )
+	PORT: .d( n20 )
+	PORT: .o( sum[5] )
+GATE: ao22f01 U6
+	PORT: .a( n21 )
+	PORT: .b( n22 )
+	PORT: .c( n23 )
+	PORT: .d( n24 )
+	PORT: .o( sum[4] )
+GATE: ao22f01 U7
+	PORT: .a( n25 )
+	PORT: .b( n26 )
+	PORT: .c( n27 )
+	PORT: .d( n28 )
+	PORT: .o( sum[3] )
+GATE: ao22f01 U8
+	PORT: .a( n29 )
+	PORT: .b( n30 )
+	PORT: .c( n31 )
+	PORT: .d( n32 )
+	PORT: .o( sum[31] )
+GATE: ao22f01 U9
+	PORT: .a( n33 )
+	PORT: .b( n34 )
+	PORT: .c( n35 )
+	PORT: .d( n36 )
+	PORT: .o( sum[30] )
+GATE: ao22f01 U10
+	PORT: .a( n37 )
+	PORT: .b( n38 )
+	PORT: .c( n39 )
+	PORT: .d( n40 )
+	PORT: .o( sum[2] )
+GATE: ao22f01 U11
+	PORT: .a( n41 )
+	PORT: .b( n42 )
+	PORT: .c( n43 )
+	PORT: .d( n44 )
+	PORT: .o( sum[29] )
+GATE: ao22f01 U12
+	PORT: .a( n45 )
+	PORT: .b( n46 )
+	PORT: .c( n47 )
+	PORT: .d( n48 )
+	PORT: .o( sum[28] )
+GATE: ao22f01 U13
+	PORT: .a( n49 )
+	PORT: .b( n50 )
+	PORT: .c( n51 )
+	PORT: .d( n52 )
+	PORT: .o( sum[27] )
+GATE: ao22f01 U14
+	PORT: .a( n53 )
+	PORT: .b( n54 )
+	PORT: .c( n55 )
+	PORT: .d( n56 )
+	PORT: .o( sum[26] )
+GATE: ao22f01 U15
+	PORT: .a( n57 )
+	PORT: .b( n58 )
+	PORT: .c( n59 )
+	PORT: .d( n60 )
+	PORT: .o( sum[25] )
+GATE: ao22f01 U16
+	PORT: .a( n61 )
+	PORT: .b( n62 )
+	PORT: .c( n63 )
+	PORT: .d( n64 )
+	PORT: .o( sum[24] )
+GATE: ao22f01 U17
+	PORT: .a( n65 )
+	PORT: .b( n66 )
+	PORT: .c( n67 )
+	PORT: .d( n68 )
+	PORT: .o( sum[23] )
+GATE: ao22f01 U18
+	PORT: .a( n69 )
+	PORT: .b( n70 )
+	PORT: .c( n71 )
+	PORT: .d( n72 )
+	PORT: .o( sum[22] )
+GATE: ao22f01 U19
+	PORT: .a( n73 )
+	PORT: .b( n74 )
+	PORT: .c( n75 )
+	PORT: .d( n76 )
+	PORT: .o( sum[21] )
+GATE: ao22f01 U20
+	PORT: .a( n77 )
+	PORT: .b( n78 )
+	PORT: .c( n79 )
+	PORT: .d( n80 )
+	PORT: .o( sum[20] )
+GATE: ao22f01 U21
+	PORT: .a( n81 )
+	PORT: .b( n82 )
+	PORT: .c( n83 )
+	PORT: .d( n84 )
+	PORT: .o( sum[1] )
+GATE: ao22f01 U22
+	PORT: .a( n85 )
+	PORT: .b( n86 )
+	PORT: .c( n87 )
+	PORT: .d( n88 )
+	PORT: .o( sum[19] )
+GATE: ao22f01 U23
+	PORT: .a( n89 )
+	PORT: .b( n90 )
+	PORT: .c( n91 )
+	PORT: .d( n92 )
+	PORT: .o( sum[18] )
+GATE: ao22f01 U24
+	PORT: .a( n93 )
+	PORT: .b( n94 )
+	PORT: .c( n95 )
+	PORT: .d( n96 )
+	PORT: .o( sum[17] )
+GATE: ao22f01 U25
+	PORT: .a( n97 )
+	PORT: .b( n98 )
+	PORT: .c( n99 )
+	PORT: .d( co15 )
+	PORT: .o( sum[16] )
+GATE: ao22f01 U26
+	PORT: .a( n100 )
+	PORT: .b( n101 )
+	PORT: .c( n102 )
+	PORT: .d( n103 )
+	PORT: .o( sum[15] )
+GATE: ao22f01 U27
+	PORT: .a( n104 )
+	PORT: .b( n105 )
+	PORT: .c( n106 )
+	PORT: .d( n107 )
+	PORT: .o( sum[14] )
+GATE: ao22f01 U28
+	PORT: .a( n108 )
+	PORT: .b( n109 )
+	PORT: .c( n110 )
+	PORT: .d( n111 )
+	PORT: .o( sum[13] )
+GATE: ao22f01 U29
+	PORT: .a( n112 )
+	PORT: .b( n113 )
+	PORT: .c( n114 )
+	PORT: .d( n115 )
+	PORT: .o( sum[12] )
+GATE: ao22f01 U30
+	PORT: .a( n116 )
+	PORT: .b( n117 )
+	PORT: .c( n118 )
+	PORT: .d( n119 )
+	PORT: .o( sum[11] )
+GATE: ao22f01 U31
+	PORT: .a( n120 )
+	PORT: .b( n121 )
+	PORT: .c( n122 )
+	PORT: .d( n123 )
+	PORT: .o( sum[10] )
+GATE: oa22f01 U32
+	PORT: .a( cin )
+	PORT: .b( n124 )
+	PORT: .c( n125 )
+	PORT: .d( n126 )
+	PORT: .o( sum[0] )
+GATE: oa22f01 U33
+	PORT: .a( n127 )
+	PORT: .b( n128 )
+	PORT: .c( n29 )
+	PORT: .d( n30 )
+	PORT: .o( cout )
+GATE: in01f01 U34
+	PORT: .a( n31 )
+	PORT: .o( n30 )
+GATE: oa22f01 U35
+	PORT: .a( b[31] )
+	PORT: .b( n128 )
+	PORT: .c( a[31] )
+	PORT: .d( n127 )
+	PORT: .o( n31 )
+GATE: in01f01 U36
+	PORT: .a( n32 )
+	PORT: .o( n29 )
+GATE: oa22f01 U37
+	PORT: .a( n129 )
+	PORT: .b( n130 )
+	PORT: .c( n33 )
+	PORT: .d( n34 )
+	PORT: .o( n32 )
+GATE: in01f01 U38
+	PORT: .a( n35 )
+	PORT: .o( n34 )
+GATE: oa22f01 U39
+	PORT: .a( b[30] )
+	PORT: .b( n130 )
+	PORT: .c( a[30] )
+	PORT: .d( n129 )
+	PORT: .o( n35 )
+GATE: in01f01 U40
+	PORT: .a( n36 )
+	PORT: .o( n33 )
+GATE: oa22f01 U41
+	PORT: .a( n131 )
+	PORT: .b( n132 )
+	PORT: .c( n41 )
+	PORT: .d( n42 )
+	PORT: .o( n36 )
+GATE: in01f01 U42
+	PORT: .a( n43 )
+	PORT: .o( n42 )
+GATE: oa22f01 U43
+	PORT: .a( b[29] )
+	PORT: .b( n132 )
+	PORT: .c( a[29] )
+	PORT: .d( n131 )
+	PORT: .o( n43 )
+GATE: in01f01 U44
+	PORT: .a( n44 )
+	PORT: .o( n41 )
+GATE: oa22f01 U45
+	PORT: .a( n133 )
+	PORT: .b( n134 )
+	PORT: .c( n45 )
+	PORT: .d( n46 )
+	PORT: .o( n44 )
+GATE: in01f01 U46
+	PORT: .a( n47 )
+	PORT: .o( n46 )
+GATE: oa22f01 U47
+	PORT: .a( b[28] )
+	PORT: .b( n134 )
+	PORT: .c( a[28] )
+	PORT: .d( n133 )
+	PORT: .o( n47 )
+GATE: in01f01 U48
+	PORT: .a( n48 )
+	PORT: .o( n45 )
+GATE: oa22f01 U49
+	PORT: .a( n135 )
+	PORT: .b( n136 )
+	PORT: .c( n49 )
+	PORT: .d( n50 )
+	PORT: .o( n48 )
+GATE: in01f01 U50
+	PORT: .a( n51 )
+	PORT: .o( n50 )
+GATE: oa22f01 U51
+	PORT: .a( b[27] )
+	PORT: .b( n136 )
+	PORT: .c( a[27] )
+	PORT: .d( n135 )
+	PORT: .o( n51 )
+GATE: in01f01 U52
+	PORT: .a( n52 )
+	PORT: .o( n49 )
+GATE: oa22f01 U53
+	PORT: .a( n137 )
+	PORT: .b( n138 )
+	PORT: .c( n53 )
+	PORT: .d( n54 )
+	PORT: .o( n52 )
+GATE: in01f01 U54
+	PORT: .a( n55 )
+	PORT: .o( n54 )
+GATE: oa22f01 U55
+	PORT: .a( b[26] )
+	PORT: .b( n138 )
+	PORT: .c( a[26] )
+	PORT: .d( n137 )
+	PORT: .o( n55 )
+GATE: in01f01 U56
+	PORT: .a( n56 )
+	PORT: .o( n53 )
+GATE: oa22f01 U57
+	PORT: .a( n139 )
+	PORT: .b( n140 )
+	PORT: .c( n57 )
+	PORT: .d( n58 )
+	PORT: .o( n56 )
+GATE: in01f01 U58
+	PORT: .a( n59 )
+	PORT: .o( n58 )
+GATE: oa22f01 U59
+	PORT: .a( b[25] )
+	PORT: .b( n140 )
+	PORT: .c( a[25] )
+	PORT: .d( n139 )
+	PORT: .o( n59 )
+GATE: in01f01 U60
+	PORT: .a( n60 )
+	PORT: .o( n57 )
+GATE: oa22f01 U61
+	PORT: .a( n141 )
+	PORT: .b( n142 )
+	PORT: .c( n61 )
+	PORT: .d( n62 )
+	PORT: .o( n60 )
+GATE: in01f01 U62
+	PORT: .a( n63 )
+	PORT: .o( n62 )
+GATE: oa22f01 U63
+	PORT: .a( b[24] )
+	PORT: .b( n142 )
+	PORT: .c( a[24] )
+	PORT: .d( n141 )
+	PORT: .o( n63 )
+GATE: in01f01 U64
+	PORT: .a( n64 )
+	PORT: .o( n61 )
+GATE: oa22f01 U65
+	PORT: .a( n143 )
+	PORT: .b( n144 )
+	PORT: .c( n65 )
+	PORT: .d( n66 )
+	PORT: .o( n64 )
+GATE: in01f01 U66
+	PORT: .a( n67 )
+	PORT: .o( n66 )
+GATE: oa22f01 U67
+	PORT: .a( b[23] )
+	PORT: .b( n144 )
+	PORT: .c( a[23] )
+	PORT: .d( n143 )
+	PORT: .o( n67 )
+GATE: in01f01 U68
+	PORT: .a( n68 )
+	PORT: .o( n65 )
+GATE: oa22f01 U69
+	PORT: .a( n145 )
+	PORT: .b( n146 )
+	PORT: .c( n69 )
+	PORT: .d( n70 )
+	PORT: .o( n68 )
+GATE: in01f01 U70
+	PORT: .a( n71 )
+	PORT: .o( n70 )
+GATE: oa22f01 U71
+	PORT: .a( b[22] )
+	PORT: .b( n146 )
+	PORT: .c( a[22] )
+	PORT: .d( n145 )
+	PORT: .o( n71 )
+GATE: in01f01 U72
+	PORT: .a( n72 )
+	PORT: .o( n69 )
+GATE: oa22f01 U73
+	PORT: .a( n147 )
+	PORT: .b( n148 )
+	PORT: .c( n73 )
+	PORT: .d( n74 )
+	PORT: .o( n72 )
+GATE: in01f01 U74
+	PORT: .a( n75 )
+	PORT: .o( n74 )
+GATE: oa22f01 U75
+	PORT: .a( b[21] )
+	PORT: .b( n148 )
+	PORT: .c( a[21] )
+	PORT: .d( n147 )
+	PORT: .o( n75 )
+GATE: in01f01 U76
+	PORT: .a( n76 )
+	PORT: .o( n73 )
+GATE: oa22f01 U77
+	PORT: .a( n149 )
+	PORT: .b( n150 )
+	PORT: .c( n77 )
+	PORT: .d( n78 )
+	PORT: .o( n76 )
+GATE: in01f01 U78
+	PORT: .a( n79 )
+	PORT: .o( n78 )
+GATE: oa22f01 U79
+	PORT: .a( b[20] )
+	PORT: .b( n150 )
+	PORT: .c( a[20] )
+	PORT: .d( n149 )
+	PORT: .o( n79 )
+GATE: in01f01 U80
+	PORT: .a( n80 )
+	PORT: .o( n77 )
+GATE: oa22f01 U81
+	PORT: .a( n151 )
+	PORT: .b( n152 )
+	PORT: .c( n85 )
+	PORT: .d( n86 )
+	PORT: .o( n80 )
+GATE: in01f01 U82
+	PORT: .a( n87 )
+	PORT: .o( n86 )
+GATE: oa22f01 U83
+	PORT: .a( b[19] )
+	PORT: .b( n152 )
+	PORT: .c( a[19] )
+	PORT: .d( n151 )
+	PORT: .o( n87 )
+GATE: in01f01 U84
+	PORT: .a( n88 )
+	PORT: .o( n85 )
+GATE: oa22f01 U85
+	PORT: .a( n153 )
+	PORT: .b( n154 )
+	PORT: .c( n89 )
+	PORT: .d( n90 )
+	PORT: .o( n88 )
+GATE: in01f01 U86
+	PORT: .a( n91 )
+	PORT: .o( n90 )
+GATE: oa22f01 U87
+	PORT: .a( b[18] )
+	PORT: .b( n154 )
+	PORT: .c( a[18] )
+	PORT: .d( n153 )
+	PORT: .o( n91 )
+GATE: in01f01 U88
+	PORT: .a( n92 )
+	PORT: .o( n89 )
+GATE: oa22f01 U89
+	PORT: .a( n155 )
+	PORT: .b( n156 )
+	PORT: .c( n93 )
+	PORT: .d( n94 )
+	PORT: .o( n92 )
+GATE: in01f01 U90
+	PORT: .a( n95 )
+	PORT: .o( n94 )
+GATE: oa22f01 U91
+	PORT: .a( b[17] )
+	PORT: .b( n156 )
+	PORT: .c( a[17] )
+	PORT: .d( n155 )
+	PORT: .o( n95 )
+GATE: in01f01 U92
+	PORT: .a( n96 )
+	PORT: .o( n93 )
+GATE: oa22f01 U93
+	PORT: .a( n157 )
+	PORT: .b( n158 )
+	PORT: .c( n98 )
+	PORT: .d( n97 )
+	PORT: .o( n96 )
+GATE: in01f01 U94
+	PORT: .a( n99 )
+	PORT: .o( n97 )
+GATE: oa22f01 U95
+	PORT: .a( b[16] )
+	PORT: .b( n158 )
+	PORT: .c( a[16] )
+	PORT: .d( n157 )
+	PORT: .o( n99 )
+GATE: in01f01 U96
+	PORT: .a( co15 )
+	PORT: .o( n98 )
+GATE: in01f01 U97
+	PORT: .a( a[16] )
+	PORT: .o( n158 )
+GATE: in01f01 U98
+	PORT: .a( b[16] )
+	PORT: .o( n157 )
+GATE: in01f01 U99
+	PORT: .a( a[17] )
+	PORT: .o( n156 )
+GATE: in01f01 U100
+	PORT: .a( b[17] )
+	PORT: .o( n155 )
+GATE: in01f01 U101
+	PORT: .a( a[18] )
+	PORT: .o( n154 )
+GATE: in01f01 U102
+	PORT: .a( b[18] )
+	PORT: .o( n153 )
+GATE: in01f01 U103
+	PORT: .a( a[19] )
+	PORT: .o( n152 )
+GATE: in01f01 U104
+	PORT: .a( b[19] )
+	PORT: .o( n151 )
+GATE: in01f01 U105
+	PORT: .a( a[20] )
+	PORT: .o( n150 )
+GATE: in01f01 U106
+	PORT: .a( b[20] )
+	PORT: .o( n149 )
+GATE: in01f01 U107
+	PORT: .a( a[21] )
+	PORT: .o( n148 )
+GATE: in01f01 U108
+	PORT: .a( b[21] )
+	PORT: .o( n147 )
+GATE: in01f01 U109
+	PORT: .a( a[22] )
+	PORT: .o( n146 )
+GATE: in01f01 U110
+	PORT: .a( b[22] )
+	PORT: .o( n145 )
+GATE: in01f01 U111
+	PORT: .a( a[23] )
+	PORT: .o( n144 )
+GATE: in01f01 U112
+	PORT: .a( b[23] )
+	PORT: .o( n143 )
+GATE: in01f01 U113
+	PORT: .a( a[24] )
+	PORT: .o( n142 )
+GATE: in01f01 U114
+	PORT: .a( b[24] )
+	PORT: .o( n141 )
+GATE: in01f01 U115
+	PORT: .a( a[25] )
+	PORT: .o( n140 )
+GATE: in01f01 U116
+	PORT: .a( b[25] )
+	PORT: .o( n139 )
+GATE: in01f01 U117
+	PORT: .a( a[26] )
+	PORT: .o( n138 )
+GATE: in01f01 U118
+	PORT: .a( b[26] )
+	PORT: .o( n137 )
+GATE: in01f01 U119
+	PORT: .a( a[27] )
+	PORT: .o( n136 )
+GATE: in01f01 U120
+	PORT: .a( b[27] )
+	PORT: .o( n135 )
+GATE: in01f01 U121
+	PORT: .a( a[28] )
+	PORT: .o( n134 )
+GATE: in01f01 U122
+	PORT: .a( b[28] )
+	PORT: .o( n133 )
+GATE: in01f01 U123
+	PORT: .a( a[29] )
+	PORT: .o( n132 )
+GATE: in01f01 U124
+	PORT: .a( b[29] )
+	PORT: .o( n131 )
+GATE: in01f01 U125
+	PORT: .a( a[30] )
+	PORT: .o( n130 )
+GATE: in01f01 U126
+	PORT: .a( b[30] )
+	PORT: .o( n129 )
+GATE: in01f01 U127
+	PORT: .a( a[31] )
+	PORT: .o( n128 )
+GATE: in01f01 U128
+	PORT: .a( b[31] )
+	PORT: .o( n127 )
+GATE: oa22f01 U129
+	PORT: .a( n159 )
+	PORT: .b( n160 )
+	PORT: .c( n100 )
+	PORT: .d( n101 )
+	PORT: .o( co15 )
+GATE: in01f01 U130
+	PORT: .a( n102 )
+	PORT: .o( n101 )
+GATE: oa22f01 U131
+	PORT: .a( b[15] )
+	PORT: .b( n160 )
+	PORT: .c( a[15] )
+	PORT: .d( n159 )
+	PORT: .o( n102 )
+GATE: in01f01 U132
+	PORT: .a( n103 )
+	PORT: .o( n100 )
+GATE: oa22f01 U133
+	PORT: .a( n161 )
+	PORT: .b( n162 )
+	PORT: .c( n104 )
+	PORT: .d( n105 )
+	PORT: .o( n103 )
+GATE: in01f01 U134
+	PORT: .a( n106 )
+	PORT: .o( n105 )
+GATE: oa22f01 U135
+	PORT: .a( b[14] )
+	PORT: .b( n162 )
+	PORT: .c( a[14] )
+	PORT: .d( n161 )
+	PORT: .o( n106 )
+GATE: in01f01 U136
+	PORT: .a( n107 )
+	PORT: .o( n104 )
+GATE: oa22f01 U137
+	PORT: .a( n163 )
+	PORT: .b( n164 )
+	PORT: .c( n108 )
+	PORT: .d( n109 )
+	PORT: .o( n107 )
+GATE: in01f01 U138
+	PORT: .a( n110 )
+	PORT: .o( n109 )
+GATE: oa22f01 U139
+	PORT: .a( b[13] )
+	PORT: .b( n164 )
+	PORT: .c( a[13] )
+	PORT: .d( n163 )
+	PORT: .o( n110 )
+GATE: in01f01 U140
+	PORT: .a( n111 )
+	PORT: .o( n108 )
+GATE: oa22f01 U141
+	PORT: .a( n165 )
+	PORT: .b( n166 )
+	PORT: .c( n112 )
+	PORT: .d( n113 )
+	PORT: .o( n111 )
+GATE: in01f01 U142
+	PORT: .a( n114 )
+	PORT: .o( n113 )
+GATE: oa22f01 U143
+	PORT: .a( b[12] )
+	PORT: .b( n166 )
+	PORT: .c( a[12] )
+	PORT: .d( n165 )
+	PORT: .o( n114 )
+GATE: in01f01 U144
+	PORT: .a( n115 )
+	PORT: .o( n112 )
+GATE: oa22f01 U145
+	PORT: .a( n167 )
+	PORT: .b( n168 )
+	PORT: .c( n116 )
+	PORT: .d( n117 )
+	PORT: .o( n115 )
+GATE: in01f01 U146
+	PORT: .a( n118 )
+	PORT: .o( n117 )
+GATE: oa22f01 U147
+	PORT: .a( b[11] )
+	PORT: .b( n168 )
+	PORT: .c( a[11] )
+	PORT: .d( n167 )
+	PORT: .o( n118 )
+GATE: in01f01 U148
+	PORT: .a( n119 )
+	PORT: .o( n116 )
+GATE: oa22f01 U149
+	PORT: .a( n169 )
+	PORT: .b( n170 )
+	PORT: .c( n120 )
+	PORT: .d( n121 )
+	PORT: .o( n119 )
+GATE: in01f01 U150
+	PORT: .a( n122 )
+	PORT: .o( n121 )
+GATE: oa22f01 U151
+	PORT: .a( b[10] )
+	PORT: .b( n170 )
+	PORT: .c( a[10] )
+	PORT: .d( n169 )
+	PORT: .o( n122 )
+GATE: in01f01 U152
+	PORT: .a( n123 )
+	PORT: .o( n120 )
+GATE: oa22f01 U153
+	PORT: .a( n171 )
+	PORT: .b( n172 )
+	PORT: .c( n1 )
+	PORT: .d( n2 )
+	PORT: .o( n123 )
+GATE: in01f01 U154
+	PORT: .a( n3 )
+	PORT: .o( n2 )
+GATE: oa22f01 U155
+	PORT: .a( b[9] )
+	PORT: .b( n172 )
+	PORT: .c( a[9] )
+	PORT: .d( n171 )
+	PORT: .o( n3 )
+GATE: in01f01 U156
+	PORT: .a( n4 )
+	PORT: .o( n1 )
+GATE: oa22f01 U157
+	PORT: .a( n173 )
+	PORT: .b( n174 )
+	PORT: .c( n5 )
+	PORT: .d( n6 )
+	PORT: .o( n4 )
+GATE: in01f01 U158
+	PORT: .a( n7 )
+	PORT: .o( n6 )
+GATE: oa22f01 U159
+	PORT: .a( b[8] )
+	PORT: .b( n174 )
+	PORT: .c( a[8] )
+	PORT: .d( n173 )
+	PORT: .o( n7 )
+GATE: in01f01 U160
+	PORT: .a( n8 )
+	PORT: .o( n5 )
+GATE: oa22f01 U161
+	PORT: .a( n175 )
+	PORT: .b( n176 )
+	PORT: .c( n9 )
+	PORT: .d( n10 )
+	PORT: .o( n8 )
+GATE: in01f01 U162
+	PORT: .a( n11 )
+	PORT: .o( n10 )
+GATE: oa22f01 U163
+	PORT: .a( b[7] )
+	PORT: .b( n176 )
+	PORT: .c( a[7] )
+	PORT: .d( n175 )
+	PORT: .o( n11 )
+GATE: in01f01 U164
+	PORT: .a( n12 )
+	PORT: .o( n9 )
+GATE: oa22f01 U165
+	PORT: .a( n177 )
+	PORT: .b( n178 )
+	PORT: .c( n13 )
+	PORT: .d( n14 )
+	PORT: .o( n12 )
+GATE: in01f01 U166
+	PORT: .a( n15 )
+	PORT: .o( n14 )
+GATE: oa22f01 U167
+	PORT: .a( b[6] )
+	PORT: .b( n178 )
+	PORT: .c( a[6] )
+	PORT: .d( n177 )
+	PORT: .o( n15 )
+GATE: in01f01 U168
+	PORT: .a( n16 )
+	PORT: .o( n13 )
+GATE: oa22f01 U169
+	PORT: .a( n179 )
+	PORT: .b( n180 )
+	PORT: .c( n17 )
+	PORT: .d( n18 )
+	PORT: .o( n16 )
+GATE: in01f01 U170
+	PORT: .a( n19 )
+	PORT: .o( n18 )
+GATE: oa22f01 U171
+	PORT: .a( b[5] )
+	PORT: .b( n180 )
+	PORT: .c( a[5] )
+	PORT: .d( n179 )
+	PORT: .o( n19 )
+GATE: in01f01 U172
+	PORT: .a( n20 )
+	PORT: .o( n17 )
+GATE: oa22f01 U173
+	PORT: .a( n181 )
+	PORT: .b( n182 )
+	PORT: .c( n21 )
+	PORT: .d( n22 )
+	PORT: .o( n20 )
+GATE: in01f01 U174
+	PORT: .a( n23 )
+	PORT: .o( n22 )
+GATE: oa22f01 U175
+	PORT: .a( b[4] )
+	PORT: .b( n182 )
+	PORT: .c( a[4] )
+	PORT: .d( n181 )
+	PORT: .o( n23 )
+GATE: in01f01 U176
+	PORT: .a( n24 )
+	PORT: .o( n21 )
+GATE: oa22f01 U177
+	PORT: .a( n183 )
+	PORT: .b( n184 )
+	PORT: .c( n25 )
+	PORT: .d( n26 )
+	PORT: .o( n24 )
+GATE: in01f01 U178
+	PORT: .a( n27 )
+	PORT: .o( n26 )
+GATE: oa22f01 U179
+	PORT: .a( b[3] )
+	PORT: .b( n184 )
+	PORT: .c( a[3] )
+	PORT: .d( n183 )
+	PORT: .o( n27 )
+GATE: in01f01 U180
+	PORT: .a( n28 )
+	PORT: .o( n25 )
+GATE: oa22f01 U181
+	PORT: .a( n185 )
+	PORT: .b( n186 )
+	PORT: .c( n37 )
+	PORT: .d( n38 )
+	PORT: .o( n28 )
+GATE: in01f01 U182
+	PORT: .a( n39 )
+	PORT: .o( n38 )
+GATE: oa22f01 U183
+	PORT: .a( b[2] )
+	PORT: .b( n186 )
+	PORT: .c( a[2] )
+	PORT: .d( n185 )
+	PORT: .o( n39 )
+GATE: in01f01 U184
+	PORT: .a( n40 )
+	PORT: .o( n37 )
+GATE: oa22f01 U185
+	PORT: .a( n187 )
+	PORT: .b( n188 )
+	PORT: .c( n81 )
+	PORT: .d( n82 )
+	PORT: .o( n40 )
+GATE: in01f01 U186
+	PORT: .a( n83 )
+	PORT: .o( n82 )
+GATE: oa22f01 U187
+	PORT: .a( b[1] )
+	PORT: .b( n188 )
+	PORT: .c( a[1] )
+	PORT: .d( n187 )
+	PORT: .o( n83 )
+GATE: in01f01 U188
+	PORT: .a( n84 )
+	PORT: .o( n81 )
+GATE: oa22f01 U189
+	PORT: .a( n124 )
+	PORT: .b( n125 )
+	PORT: .c( n189 )
+	PORT: .d( n190 )
+	PORT: .o( n84 )
+GATE: in01f01 U190
+	PORT: .a( cin )
+	PORT: .o( n125 )
+GATE: in01f01 U191
+	PORT: .a( n126 )
+	PORT: .o( n124 )
+GATE: oa22f01 U192
+	PORT: .a( b[0] )
+	PORT: .b( n189 )
+	PORT: .c( a[0] )
+	PORT: .d( n190 )
+	PORT: .o( n126 )
+GATE: in01f01 U193
+	PORT: .a( b[0] )
+	PORT: .o( n190 )
+GATE: in01f01 U194
+	PORT: .a( a[0] )
+	PORT: .o( n189 )
+GATE: in01f01 U195
+	PORT: .a( a[1] )
+	PORT: .o( n188 )
+GATE: in01f01 U196
+	PORT: .a( b[1] )
+	PORT: .o( n187 )
+GATE: in01f01 U197
+	PORT: .a( a[2] )
+	PORT: .o( n186 )
+GATE: in01f01 U198
+	PORT: .a( b[2] )
+	PORT: .o( n185 )
+GATE: in01f01 U199
+	PORT: .a( a[3] )
+	PORT: .o( n184 )
+GATE: in01f01 U200
+	PORT: .a( b[3] )
+	PORT: .o( n183 )
+GATE: in01f01 U201
+	PORT: .a( a[4] )
+	PORT: .o( n182 )
+GATE: in01f01 U202
+	PORT: .a( b[4] )
+	PORT: .o( n181 )
+GATE: in01f01 U203
+	PORT: .a( a[5] )
+	PORT: .o( n180 )
+GATE: in01f01 U204
+	PORT: .a( b[5] )
+	PORT: .o( n179 )
+GATE: in01f01 U205
+	PORT: .a( a[6] )
+	PORT: .o( n178 )
+GATE: in01f01 U206
+	PORT: .a( b[6] )
+	PORT: .o( n177 )
+GATE: in01f01 U207
+	PORT: .a( a[7] )
+	PORT: .o( n176 )
+GATE: in01f01 U208
+	PORT: .a( b[7] )
+	PORT: .o( n175 )
+GATE: in01f01 U209
+	PORT: .a( a[8] )
+	PORT: .o( n174 )
+GATE: in01f01 U210
+	PORT: .a( b[8] )
+	PORT: .o( n173 )
+GATE: in01f01 U211
+	PORT: .a( a[9] )
+	PORT: .o( n172 )
+GATE: in01f01 U212
+	PORT: .a( b[9] )
+	PORT: .o( n171 )
+GATE: in01f01 U213
+	PORT: .a( a[10] )
+	PORT: .o( n170 )
+GATE: in01f01 U214
+	PORT: .a( b[10] )
+	PORT: .o( n169 )
+GATE: in01f01 U215
+	PORT: .a( a[11] )
+	PORT: .o( n168 )
+GATE: in01f01 U216
+	PORT: .a( b[11] )
+	PORT: .o( n167 )
+GATE: in01f01 U217
+	PORT: .a( a[12] )
+	PORT: .o( n166 )
+GATE: in01f01 U218
+	PORT: .a( b[12] )
+	PORT: .o( n165 )
+GATE: in01f01 U219
+	PORT: .a( a[13] )
+	PORT: .o( n164 )
+GATE: in01f01 U220
+	PORT: .a( b[13] )
+	PORT: .o( n163 )
+GATE: in01f01 U221
+	PORT: .a( a[14] )
+	PORT: .o( n162 )
+GATE: in01f01 U222
+	PORT: .a( b[14] )
+	PORT: .o( n161 )
+GATE: in01f01 U223
+	PORT: .a( a[15] )
+	PORT: .o( n160 )
+GATE: in01f01 U224
+	PORT: .a( b[15] )
+	PORT: .o( n159 )
+END MODULE

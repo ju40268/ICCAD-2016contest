@@ -1,0 +1,3100 @@
+NEW MODULE usb_phy
+PORTS: DataOut_i_0_
+PORTS: DataOut_i_1_
+PORTS: DataOut_i_2_
+PORTS: DataOut_i_3_
+PORTS: DataOut_i_4_
+PORTS: DataOut_i_5_
+PORTS: DataOut_i_6_
+PORTS: DataOut_i_7_
+PORTS: TxValid_i
+PORTS: ispd_clk
+PORTS: phy_tx_mode
+PORTS: rst
+PORTS: rxd
+PORTS: rxdn
+PORTS: rxdp
+PORTS: DataIn_o_0_
+PORTS: DataIn_o_1_
+PORTS: DataIn_o_2_
+PORTS: DataIn_o_3_
+PORTS: DataIn_o_4_
+PORTS: DataIn_o_5_
+PORTS: DataIn_o_6_
+PORTS: DataIn_o_7_
+PORTS: LineState_o_0_
+PORTS: LineState_o_1_
+PORTS: RxActive_o
+PORTS: RxError_o
+PORTS: RxValid_o
+PORTS: TxReady_o
+PORTS: g1897_u0_o
+PORTS: txdn
+PORTS: txdp
+PORTS: txoe
+PORTS: usb_rst
+INPUT: DataOut_i_0_
+INPUT: DataOut_i_1_
+INPUT: DataOut_i_2_
+INPUT: DataOut_i_3_
+INPUT: DataOut_i_4_
+INPUT: DataOut_i_5_
+INPUT: DataOut_i_6_
+INPUT: DataOut_i_7_
+INPUT: TxValid_i
+INPUT: ispd_clk
+INPUT: phy_tx_mode
+INPUT: rst
+INPUT: rxd
+INPUT: rxdn
+INPUT: rxdp
+OUTPUT: DataIn_o_0_
+OUTPUT: DataIn_o_1_
+OUTPUT: DataIn_o_2_
+OUTPUT: DataIn_o_3_
+OUTPUT: DataIn_o_4_
+OUTPUT: DataIn_o_5_
+OUTPUT: DataIn_o_6_
+OUTPUT: DataIn_o_7_
+OUTPUT: LineState_o_0_
+OUTPUT: LineState_o_1_
+OUTPUT: RxActive_o
+OUTPUT: RxError_o
+OUTPUT: RxValid_o
+OUTPUT: TxReady_o
+OUTPUT: g1897_u0_o
+OUTPUT: txdn
+OUTPUT: txdp
+OUTPUT: txoe
+OUTPUT: usb_rst
+WIRE: DataIn_o_0_
+WIRE: DataIn_o_1_
+WIRE: DataIn_o_2_
+WIRE: DataIn_o_3_
+WIRE: DataIn_o_4_
+WIRE: DataIn_o_5_
+WIRE: DataIn_o_6_
+WIRE: DataIn_o_7_
+WIRE: DataOut_i_0_
+WIRE: DataOut_i_1_
+WIRE: DataOut_i_2_
+WIRE: DataOut_i_3_
+WIRE: DataOut_i_4_
+WIRE: DataOut_i_5_
+WIRE: DataOut_i_6_
+WIRE: DataOut_i_7_
+WIRE: LineState_o_0_
+WIRE: LineState_o_1_
+WIRE: RxActive_o
+WIRE: RxError_o
+WIRE: RxValid_o
+WIRE: TxReady_o
+WIRE: TxValid_i
+WIRE: g11_p
+WIRE: g15_p
+WIRE: g1737_p
+WIRE: g1738_p
+WIRE: g1739_p
+WIRE: g1740_p
+WIRE: g1741_p
+WIRE: g1742_p
+WIRE: g1743_p
+WIRE: g1757_p
+WIRE: g1776_da
+WIRE: g1776_db
+WIRE: g1776_sb
+WIRE: g1777_da
+WIRE: g1777_db
+WIRE: g1777_sb
+WIRE: g1778_da
+WIRE: g1778_db
+WIRE: g1778_sb
+WIRE: g1779_da
+WIRE: g1779_db
+WIRE: g1779_sb
+WIRE: g1780_da
+WIRE: g1780_db
+WIRE: g1780_sb
+WIRE: g1781_da
+WIRE: g1781_db
+WIRE: g1781_sb
+WIRE: g1782_da
+WIRE: g1782_db
+WIRE: g1782_sb
+WIRE: g1855_da
+WIRE: g1855_db
+WIRE: g1855_sb
+WIRE: g1857_p
+WIRE: g1881_p
+WIRE: g1884_p
+WIRE: g1897_u0_o
+WIRE: g1901_p
+WIRE: g1923_p
+WIRE: g1942_p
+WIRE: g1965_p
+WIRE: g1975_p
+WIRE: g1980_p
+WIRE: g2028_p
+WIRE: g2035_p
+WIRE: g2050_p
+WIRE: g2057_p
+WIRE: g2063_da
+WIRE: g2063_db
+WIRE: g2063_sb
+WIRE: g2066_p
+WIRE: g2067_p
+WIRE: g2068_p
+WIRE: g2069_p
+WIRE: g2091_p
+WIRE: g2103_p
+WIRE: g2108_p
+WIRE: g2113_p
+WIRE: g2116_p
+WIRE: g2128_p
+WIRE: g2130_p
+WIRE: g2141_p
+WIRE: g2385_p
+WIRE: g2412_p
+WIRE: g2413_p
+WIRE: g2494_p
+WIRE: g2506_p
+WIRE: g2651_p
+WIRE: g2674_p
+WIRE: g41_p
+WIRE: i_rx_phy_bit_cnt_0_
+WIRE: i_rx_phy_bit_cnt_2_
+WIRE: i_rx_phy_bit_stuff_err
+WIRE: i_rx_phy_bit_stuff_err_reg_Q
+WIRE: i_rx_phy_byte_err
+WIRE: i_rx_phy_byte_err_reg_Q
+WIRE: i_rx_phy_dpll_state_0_
+WIRE: i_rx_phy_dpll_state_1_
+WIRE: i_rx_phy_fs_ce_r1
+WIRE: i_rx_phy_fs_ce_r2
+WIRE: i_rx_phy_fs_state_0_
+WIRE: i_rx_phy_fs_state_2_
+WIRE: i_rx_phy_one_cnt_0_
+WIRE: i_rx_phy_one_cnt_1_
+WIRE: i_rx_phy_one_cnt_2_
+WIRE: i_rx_phy_rx_en
+WIRE: i_rx_phy_rx_valid1
+WIRE: i_rx_phy_rx_valid_r
+WIRE: i_rx_phy_rxd_r
+WIRE: i_rx_phy_rxd_s
+WIRE: i_rx_phy_rxd_s0
+WIRE: i_rx_phy_rxd_s1
+WIRE: i_rx_phy_rxd_s1_reg_Q
+WIRE: i_rx_phy_rxdn_s
+WIRE: i_rx_phy_rxdn_s0
+WIRE: i_rx_phy_rxdn_s_r
+WIRE: i_rx_phy_rxdn_s_r_reg_Q
+WIRE: i_rx_phy_rxdp_s
+WIRE: i_rx_phy_rxdp_s0
+WIRE: i_rx_phy_rxdp_s_r
+WIRE: i_rx_phy_rxdp_s_r_reg_Q
+WIRE: i_rx_phy_sd_nrzi
+WIRE: i_rx_phy_sd_r
+WIRE: i_rx_phy_se0_r
+WIRE: i_rx_phy_se0_r_reg_Q
+WIRE: i_rx_phy_se0_s
+WIRE: i_rx_phy_shift_en
+WIRE: i_rx_phy_sync_err
+WIRE: i_rx_phy_sync_err_reg_Q
+WIRE: i_tx_phy_append_eop
+WIRE: i_tx_phy_append_eop_sync1
+WIRE: i_tx_phy_append_eop_sync2
+WIRE: i_tx_phy_append_eop_sync4
+WIRE: i_tx_phy_bit_cnt_0_
+WIRE: i_tx_phy_bit_cnt_1_
+WIRE: i_tx_phy_bit_cnt_2_
+WIRE: i_tx_phy_data_done
+WIRE: i_tx_phy_hold_reg
+WIRE: i_tx_phy_hold_reg_10
+WIRE: i_tx_phy_hold_reg_4
+WIRE: i_tx_phy_hold_reg_5
+WIRE: i_tx_phy_hold_reg_6
+WIRE: i_tx_phy_hold_reg_7
+WIRE: i_tx_phy_hold_reg_8
+WIRE: i_tx_phy_hold_reg_9
+WIRE: i_tx_phy_hold_reg_d
+WIRE: i_tx_phy_hold_reg_d_11
+WIRE: i_tx_phy_hold_reg_d_12
+WIRE: i_tx_phy_hold_reg_d_13
+WIRE: i_tx_phy_hold_reg_d_14
+WIRE: i_tx_phy_hold_reg_d_15
+WIRE: i_tx_phy_hold_reg_d_17
+WIRE: i_tx_phy_hold_reg_d_reg_1__Q
+WIRE: i_tx_phy_hold_reg_d_reg_3__Q
+WIRE: i_tx_phy_hold_reg_d_reg_5__Q
+WIRE: i_tx_phy_hold_reg_d_reg_6__Q
+WIRE: i_tx_phy_ld_data
+WIRE: i_tx_phy_ld_data_reg_Q
+WIRE: i_tx_phy_one_cnt_0_
+WIRE: i_tx_phy_one_cnt_1_
+WIRE: i_tx_phy_one_cnt_2_
+WIRE: i_tx_phy_sd_bs_o
+WIRE: i_tx_phy_sd_nrzi_o
+WIRE: i_tx_phy_sd_raw_o
+WIRE: i_tx_phy_sft_done
+WIRE: i_tx_phy_sft_done_r
+WIRE: i_tx_phy_state_1_
+WIRE: i_tx_phy_state_2_
+WIRE: i_tx_phy_tx_ip
+WIRE: i_tx_phy_txoe_r1
+WIRE: i_tx_phy_txoe_r2
+WIRE: ispd_clk
+WIRE: n_10
+WIRE: n_100
+WIRE: n_103
+WIRE: n_105
+WIRE: n_106
+WIRE: n_108
+WIRE: n_11
+WIRE: n_111
+WIRE: n_112
+WIRE: n_115
+WIRE: n_116
+WIRE: n_118
+WIRE: n_12
+WIRE: n_120
+WIRE: n_121
+WIRE: n_122
+WIRE: n_123
+WIRE: n_124
+WIRE: n_125
+WIRE: n_126
+WIRE: n_127
+WIRE: n_130
+WIRE: n_131
+WIRE: n_132
+WIRE: n_133
+WIRE: n_138
+WIRE: n_139
+WIRE: n_141
+WIRE: n_142
+WIRE: n_15
+WIRE: n_150
+WIRE: n_152
+WIRE: n_153
+WIRE: n_154
+WIRE: n_155
+WIRE: n_157
+WIRE: n_161
+WIRE: n_163
+WIRE: n_164
+WIRE: n_165
+WIRE: n_166
+WIRE: n_167
+WIRE: n_168
+WIRE: n_169
+WIRE: n_170
+WIRE: n_172
+WIRE: n_175
+WIRE: n_176
+WIRE: n_18
+WIRE: n_181
+WIRE: n_182
+WIRE: n_183
+WIRE: n_184
+WIRE: n_185
+WIRE: n_186
+WIRE: n_191
+WIRE: n_192
+WIRE: n_193
+WIRE: n_195
+WIRE: n_197
+WIRE: n_198
+WIRE: n_201
+WIRE: n_203
+WIRE: n_204
+WIRE: n_209
+WIRE: n_21
+WIRE: n_210
+WIRE: n_213
+WIRE: n_217
+WIRE: n_22
+WIRE: n_222
+WIRE: n_223
+WIRE: n_224
+WIRE: n_225
+WIRE: n_226
+WIRE: n_227
+WIRE: n_228
+WIRE: n_229
+WIRE: n_230
+WIRE: n_231
+WIRE: n_232
+WIRE: n_233
+WIRE: n_235
+WIRE: n_237
+WIRE: n_238
+WIRE: n_239
+WIRE: n_240
+WIRE: n_241
+WIRE: n_243
+WIRE: n_244
+WIRE: n_245
+WIRE: n_246
+WIRE: n_248
+WIRE: n_251
+WIRE: n_252
+WIRE: n_254
+WIRE: n_255
+WIRE: n_256
+WIRE: n_257
+WIRE: n_258
+WIRE: n_259
+WIRE: n_263
+WIRE: n_265
+WIRE: n_266
+WIRE: n_267
+WIRE: n_268
+WIRE: n_269
+WIRE: n_27
+WIRE: n_273
+WIRE: n_274
+WIRE: n_275
+WIRE: n_276
+WIRE: n_277
+WIRE: n_278
+WIRE: n_28
+WIRE: n_280
+WIRE: n_283
+WIRE: n_288
+WIRE: n_289
+WIRE: n_290
+WIRE: n_291
+WIRE: n_292
+WIRE: n_293
+WIRE: n_294
+WIRE: n_296
+WIRE: n_297
+WIRE: n_299
+WIRE: n_300
+WIRE: n_301
+WIRE: n_304
+WIRE: n_306
+WIRE: n_307
+WIRE: n_308
+WIRE: n_309
+WIRE: n_310
+WIRE: n_311
+WIRE: n_312
+WIRE: n_313
+WIRE: n_316
+WIRE: n_317
+WIRE: n_318
+WIRE: n_319
+WIRE: n_320
+WIRE: n_322
+WIRE: n_323
+WIRE: n_324
+WIRE: n_325
+WIRE: n_33
+WIRE: n_330
+WIRE: n_331
+WIRE: n_332
+WIRE: n_333
+WIRE: n_334
+WIRE: n_337
+WIRE: n_338
+WIRE: n_339
+WIRE: n_340
+WIRE: n_341
+WIRE: n_342
+WIRE: n_343
+WIRE: n_344
+WIRE: n_347
+WIRE: n_35
+WIRE: n_350
+WIRE: n_351
+WIRE: n_352
+WIRE: n_353
+WIRE: n_354
+WIRE: n_355
+WIRE: n_359
+WIRE: n_360
+WIRE: n_361
+WIRE: n_362
+WIRE: n_363
+WIRE: n_364
+WIRE: n_365
+WIRE: n_366
+WIRE: n_367
+WIRE: n_368
+WIRE: n_369
+WIRE: n_37
+WIRE: n_370
+WIRE: n_373
+WIRE: n_375
+WIRE: n_377
+WIRE: n_378
+WIRE: n_380
+WIRE: n_384
+WIRE: n_385
+WIRE: n_386
+WIRE: n_387
+WIRE: n_388
+WIRE: n_389
+WIRE: n_390
+WIRE: n_391
+WIRE: n_392
+WIRE: n_394
+WIRE: n_395
+WIRE: n_400
+WIRE: n_401
+WIRE: n_404
+WIRE: n_405
+WIRE: n_406
+WIRE: n_407
+WIRE: n_409
+WIRE: n_410
+WIRE: n_411
+WIRE: n_413
+WIRE: n_414
+WIRE: n_415
+WIRE: n_416
+WIRE: n_417
+WIRE: n_420
+WIRE: n_421
+WIRE: n_423
+WIRE: n_424
+WIRE: n_425
+WIRE: n_426
+WIRE: n_427
+WIRE: n_428
+WIRE: n_431
+WIRE: n_432
+WIRE: n_433
+WIRE: n_434
+WIRE: n_435
+WIRE: n_436
+WIRE: n_439
+WIRE: n_440
+WIRE: n_443
+WIRE: n_444
+WIRE: n_446
+WIRE: n_447
+WIRE: n_449
+WIRE: n_450
+WIRE: n_452
+WIRE: n_453
+WIRE: n_454
+WIRE: n_455
+WIRE: n_456
+WIRE: n_457
+WIRE: n_458
+WIRE: n_459
+WIRE: n_460
+WIRE: n_461
+WIRE: n_462
+WIRE: n_467
+WIRE: n_471
+WIRE: n_472
+WIRE: n_479
+WIRE: n_48
+WIRE: n_480
+WIRE: n_481
+WIRE: n_482
+WIRE: n_483
+WIRE: n_484
+WIRE: n_485
+WIRE: n_486
+WIRE: n_487
+WIRE: n_489
+WIRE: n_49
+WIRE: n_490
+WIRE: n_492
+WIRE: n_493
+WIRE: n_499
+WIRE: n_50
+WIRE: n_505
+WIRE: n_506
+WIRE: n_507
+WIRE: n_509
+WIRE: n_51
+WIRE: n_511
+WIRE: n_52
+WIRE: n_523
+WIRE: n_529
+WIRE: n_53
+WIRE: n_538
+WIRE: n_539
+WIRE: n_54
+WIRE: n_540
+WIRE: n_55
+WIRE: n_559
+WIRE: n_56
+WIRE: n_567
+WIRE: n_57
+WIRE: n_573
+WIRE: n_574
+WIRE: n_58
+WIRE: n_583
+WIRE: n_588
+WIRE: n_590
+WIRE: n_593
+WIRE: n_598
+WIRE: n_60
+WIRE: n_604
+WIRE: n_61
+WIRE: n_628
+WIRE: n_629
+WIRE: n_63
+WIRE: n_631
+WIRE: n_632
+WIRE: n_64
+WIRE: n_66
+WIRE: n_660
+WIRE: n_661
+WIRE: n_665
+WIRE: n_666
+WIRE: n_69
+WIRE: n_697
+WIRE: n_699
+WIRE: n_7
+WIRE: n_70
+WIRE: n_700
+WIRE: n_701
+WIRE: n_703
+WIRE: n_704
+WIRE: n_706
+WIRE: n_707
+WIRE: n_708
+WIRE: n_709
+WIRE: n_71
+WIRE: n_710
+WIRE: n_722
+WIRE: n_726
+WIRE: n_727
+WIRE: n_734
+WIRE: n_735
+WIRE: n_737
+WIRE: n_74
+WIRE: n_741
+WIRE: n_742
+WIRE: n_743
+WIRE: n_748
+WIRE: n_749
+WIRE: n_752
+WIRE: n_753
+WIRE: n_754
+WIRE: n_755
+WIRE: n_756
+WIRE: n_758
+WIRE: n_759
+WIRE: n_763
+WIRE: n_764
+WIRE: n_767
+WIRE: n_77
+WIRE: n_782
+WIRE: n_783
+WIRE: n_785
+WIRE: n_786
+WIRE: n_788
+WIRE: n_794
+WIRE: n_796
+WIRE: n_8
+WIRE: n_800
+WIRE: n_804
+WIRE: n_81
+WIRE: n_840
+WIRE: n_841
+WIRE: n_85
+WIRE: n_852
+WIRE: n_855
+WIRE: n_864
+WIRE: n_873
+WIRE: n_878
+WIRE: n_88
+WIRE: n_882
+WIRE: n_884
+WIRE: n_885
+WIRE: n_888
+WIRE: n_894
+WIRE: n_9
+WIRE: n_90
+WIRE: n_91
+WIRE: n_910
+WIRE: n_911
+WIRE: n_913
+WIRE: n_914
+WIRE: n_915
+WIRE: n_916
+WIRE: n_919
+WIRE: n_920
+WIRE: n_921
+WIRE: n_922
+WIRE: n_923
+WIRE: n_924
+WIRE: n_925
+WIRE: n_926
+WIRE: n_927
+WIRE: n_928
+WIRE: n_929
+WIRE: n_930
+WIRE: n_932
+WIRE: n_933
+WIRE: n_934
+WIRE: n_935
+WIRE: n_937
+WIRE: n_938
+WIRE: n_939
+WIRE: n_940
+WIRE: n_941
+WIRE: n_942
+WIRE: n_943
+WIRE: n_944
+WIRE: n_945
+WIRE: n_947
+WIRE: n_948
+WIRE: n_949
+WIRE: n_951
+WIRE: n_952
+WIRE: n_957
+WIRE: n_958
+WIRE: n_959
+WIRE: n_960
+WIRE: n_961
+WIRE: n_962
+WIRE: n_963
+WIRE: n_965
+WIRE: n_966
+WIRE: n_967
+WIRE: n_968
+WIRE: n_969
+WIRE: n_97
+WIRE: n_970
+WIRE: n_971
+WIRE: n_972
+WIRE: n_974
+WIRE: n_976
+WIRE: n_977
+WIRE: n_980
+WIRE: n_981
+WIRE: n_982
+WIRE: n_984
+WIRE: n_985
+WIRE: n_986
+WIRE: n_988
+WIRE: n_989
+WIRE: n_990
+WIRE: n_991
+WIRE: n_992
+WIRE: phy_tx_mode
+WIRE: rst
+WIRE: rst_cnt_0_
+WIRE: rst_cnt_1_
+WIRE: rst_cnt_3_
+WIRE: rst_cnt_4_
+WIRE: rxd
+WIRE: rxdn
+WIRE: rxdp
+WIRE: txdn
+WIRE: txdp
+WIRE: txoe
+WIRE: usb_rst
+GATE: no02s01 g10_u0
+	PORT: .a( n_911 )
+	PORT: .b( n_913 )
+	PORT: .o( n_914 )
+GATE: no02s01 g11_u0
+	PORT: .a( n_980 )
+	PORT: .b( n_947 )
+	PORT: .o( g11_p )
+GATE: in01s01 g11_u1
+	PORT: .a( g11_p )
+	PORT: .o( n_911 )
+GATE: in01s01 g12_u0
+	PORT: .a( i_rx_phy_rx_en )
+	PORT: .o( n_540 )
+GATE: in01s02 g13_u0
+	PORT: .a( n_794 )
+	PORT: .o( n_913 )
+GATE: no02s01 g14_u0
+	PORT: .a( n_788 )
+	PORT: .b( n_981 )
+	PORT: .o( n_604 )
+GATE: na02s01 g15_u0
+	PORT: .a( n_948 )
+	PORT: .b( n_796 )
+	PORT: .o( g15_p )
+GATE: in01s01 g15_u1
+	PORT: .a( g15_p )
+	PORT: .o( n_949 )
+GATE: na03s01 g1649_u0
+	PORT: .a( i_rx_phy_byte_err )
+	PORT: .b( i_rx_phy_sync_err )
+	PORT: .c( i_rx_phy_bit_stuff_err )
+	PORT: .o( RxError_o )
+GATE: in01s02 g1653_u0
+	PORT: .a( n_632 )
+	PORT: .o( n_529 )
+GATE: ao12s01 g1661_u0
+	PORT: .a( n_363 )
+	PORT: .b( n_506 )
+	PORT: .c( n_660 )
+	PORT: .o( n_523 )
+GATE: no02s01 g1680_u0
+	PORT: .a( n_386 )
+	PORT: .b( n_416 )
+	PORT: .o( n_417 )
+GATE: na02s01 g1681_u0
+	PORT: .a( n_493 )
+	PORT: .b( n_440 )
+	PORT: .o( n_511 )
+GATE: ao12s01 g1695_u0
+	PORT: .a( n_181 )
+	PORT: .b( n_704 )
+	PORT: .c( n_935 )
+	PORT: .o( n_459 )
+GATE: na02s01 g1696_u0
+	PORT: .a( n_938 )
+	PORT: .b( n_480 )
+	PORT: .o( n_481 )
+GATE: na02s01 g1697_u0
+	PORT: .a( n_490 )
+	PORT: .b( n_786 )
+	PORT: .o( n_506 )
+GATE: in01s01 g1702_u0
+	PORT: .a( n_404 )
+	PORT: .o( n_423 )
+GATE: na02s01 g1703_u0
+	PORT: .a( n_380 )
+	PORT: .b( n_269 )
+	PORT: .o( n_404 )
+GATE: no02s01 g1707_u0
+	PORT: .a( n_472 )
+	PORT: .b( n_444 )
+	PORT: .o( n_499 )
+GATE: ao12s01 g1709_u0
+	PORT: .a( n_370 )
+	PORT: .b( n_384 )
+	PORT: .c( rst_cnt_3_ )
+	PORT: .o( n_386 )
+GATE: na03s01 g1711_u0
+	PORT: .a( n_782 )
+	PORT: .b( n_176 )
+	PORT: .c( n_783 )
+	PORT: .o( n_493 )
+GATE: na02s01 g1717_u0
+	PORT: .a( n_916 )
+	PORT: .b( n_74 )
+	PORT: .o( n_439 )
+GATE: no02s01 g1718_u0
+	PORT: .a( n_916 )
+	PORT: .b( n_467 )
+	PORT: .o( n_783 )
+GATE: na02s01 g1719_u0
+	PORT: .a( n_926 )
+	PORT: .b( n_982 )
+	PORT: .o( n_480 )
+GATE: na02s01 g1724_u0
+	PORT: .a( n_919 )
+	PORT: .b( n_914 )
+	PORT: .o( n_492 )
+GATE: no02s01 g1725_u0
+	PORT: .a( n_385 )
+	PORT: .b( n_416 )
+	PORT: .o( n_428 )
+GATE: ao12s01 g1726_u0
+	PORT: .a( n_384 )
+	PORT: .b( n_292 )
+	PORT: .c( n_256 )
+	PORT: .o( n_370 )
+GATE: na03s01 g1728_u0
+	PORT: .a( n_974 )
+	PORT: .b( n_462 )
+	PORT: .c( n_450 )
+	PORT: .o( n_507 )
+GATE: ao12s01 g1729_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_359 )
+	PORT: .c( n_347 )
+	PORT: .o( n_414 )
+GATE: in01s01 g1731_u0
+	PORT: .a( n_754 )
+	PORT: .o( n_490 )
+GATE: in01s01 g1733_u0
+	PORT: .a( n_753 )
+	PORT: .o( n_461 )
+GATE: in01s01 g1734_u0
+	PORT: .a( n_753 )
+	PORT: .o( n_460 )
+GATE: ao12s01 g1736_u0
+	PORT: .a( n_27 )
+	PORT: .b( n_369 )
+	PORT: .c( n_337 )
+	PORT: .o( n_411 )
+GATE: na02s01 g1737_u0
+	PORT: .a( n_458 )
+	PORT: .b( n_974 )
+	PORT: .o( g1737_p )
+GATE: in01s01 g1737_u1
+	PORT: .a( g1737_p )
+	PORT: .o( n_489 )
+GATE: na02s01 g1738_u0
+	PORT: .a( n_457 )
+	PORT: .b( n_974 )
+	PORT: .o( g1738_p )
+GATE: in01s01 g1738_u1
+	PORT: .a( g1738_p )
+	PORT: .o( n_487 )
+GATE: na02s01 g1739_u0
+	PORT: .a( n_456 )
+	PORT: .b( n_974 )
+	PORT: .o( g1739_p )
+GATE: in01s01 g1739_u1
+	PORT: .a( g1739_p )
+	PORT: .o( n_486 )
+GATE: na02s01 g1740_u0
+	PORT: .a( n_455 )
+	PORT: .b( n_974 )
+	PORT: .o( g1740_p )
+GATE: in01s01 g1740_u1
+	PORT: .a( g1740_p )
+	PORT: .o( n_485 )
+GATE: na02s01 g1741_u0
+	PORT: .a( n_454 )
+	PORT: .b( n_974 )
+	PORT: .o( g1741_p )
+GATE: in01s01 g1741_u1
+	PORT: .a( g1741_p )
+	PORT: .o( n_484 )
+GATE: na02s01 g1742_u0
+	PORT: .a( n_453 )
+	PORT: .b( n_974 )
+	PORT: .o( g1742_p )
+GATE: in01s01 g1742_u1
+	PORT: .a( g1742_p )
+	PORT: .o( n_483 )
+GATE: na02s01 g1743_u0
+	PORT: .a( n_452 )
+	PORT: .b( n_974 )
+	PORT: .o( g1743_p )
+GATE: in01s01 g1743_u1
+	PORT: .a( g1743_p )
+	PORT: .o( n_482 )
+GATE: oa12s01 g1744_u0
+	PORT: .a( i_rx_phy_se0_r )
+	PORT: .b( n_353 )
+	PORT: .c( i_rx_phy_bit_cnt_2_ )
+	PORT: .o( n_472 )
+GATE: oa12s01 g1745_u0
+	PORT: .a( n_252 )
+	PORT: .b( n_311 )
+	PORT: .c( n_384 )
+	PORT: .o( n_380 )
+GATE: in01s01 g1746_u0
+	PORT: .a( n_479 )
+	PORT: .o( n_505 )
+GATE: na04s01 g1747_u0
+	PORT: .a( n_248 )
+	PORT: .b( n_266 )
+	PORT: .c( n_426 )
+	PORT: .d( i_rx_phy_sd_nrzi )
+	PORT: .o( n_479 )
+GATE: oa12s01 g1748_u0
+	PORT: .a( n_447 )
+	PORT: .b( n_9 )
+	PORT: .c( n_885 )
+	PORT: .o( n_471 )
+GATE: na02s01 g1757_u0
+	PORT: .a( n_969 )
+	PORT: .b( rst )
+	PORT: .o( g1757_p )
+GATE: in01s01 g1757_u1
+	PORT: .a( g1757_p )
+	PORT: .o( n_420 )
+GATE: ao12s01 g1758_u0
+	PORT: .a( n_318 )
+	PORT: .b( n_538 )
+	PORT: .c( n_539 )
+	PORT: .o( n_432 )
+GATE: na02s01 g1759_u0
+	PORT: .a( n_446 )
+	PORT: .b( n_986 )
+	PORT: .o( n_447 )
+GATE: na02s01 g1760_u0
+	PORT: .a( n_446 )
+	PORT: .b( RxActive_o )
+	PORT: .o( n_444 )
+GATE: na02s01 g1762_u0
+	PORT: .a( i_rx_phy_rx_valid_r )
+	PORT: .b( n_446 )
+	PORT: .o( n_443 )
+GATE: ao12s01 g1763_u0
+	PORT: .a( n_400 )
+	PORT: .b( n_163 )
+	PORT: .c( n_342 )
+	PORT: .o( n_388 )
+GATE: na02s01 g1764_u0
+	PORT: .a( n_767 )
+	PORT: .b( n_410 )
+	PORT: .o( n_431 )
+GATE: in01s01 g1767_u0
+	PORT: .a( n_941 )
+	PORT: .o( n_467 )
+GATE: na03s01 g1774_u0
+	PORT: .a( n_425 )
+	PORT: .b( n_175 )
+	PORT: .c( n_949 )
+	PORT: .o( n_440 )
+GATE: ao12s01 g1775_u0
+	PORT: .a( n_368 )
+	PORT: .b( n_384 )
+	PORT: .c( n_306 )
+	PORT: .o( n_385 )
+GATE: in01s01 g1776_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1776_sb )
+GATE: na02s01 g1776_u1
+	PORT: .a( DataOut_i_0_ )
+	PORT: .b( g1776_sb )
+	PORT: .o( g1776_da )
+GATE: na02s01 g1776_u2
+	PORT: .a( i_tx_phy_hold_reg )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1776_db )
+GATE: na02s01 g1776_u3
+	PORT: .a( g1776_da )
+	PORT: .b( g1776_db )
+	PORT: .o( n_458 )
+GATE: in01s01 g1777_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1777_sb )
+GATE: na02s01 g1777_u1
+	PORT: .a( DataOut_i_1_ )
+	PORT: .b( g1777_sb )
+	PORT: .o( g1777_da )
+GATE: na02s01 g1777_u2
+	PORT: .a( i_tx_phy_hold_reg_4 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1777_db )
+GATE: na02s01 g1777_u3
+	PORT: .a( g1777_da )
+	PORT: .b( g1777_db )
+	PORT: .o( n_457 )
+GATE: in01s01 g1778_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1778_sb )
+GATE: na02s01 g1778_u1
+	PORT: .a( DataOut_i_2_ )
+	PORT: .b( g1778_sb )
+	PORT: .o( g1778_da )
+GATE: na02s01 g1778_u2
+	PORT: .a( i_tx_phy_hold_reg_5 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1778_db )
+GATE: na02s01 g1778_u3
+	PORT: .a( g1778_da )
+	PORT: .b( g1778_db )
+	PORT: .o( n_456 )
+GATE: in01s01 g1779_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1779_sb )
+GATE: na02s01 g1779_u1
+	PORT: .a( DataOut_i_3_ )
+	PORT: .b( g1779_sb )
+	PORT: .o( g1779_da )
+GATE: na02s01 g1779_u2
+	PORT: .a( i_tx_phy_hold_reg_6 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1779_db )
+GATE: na02s01 g1779_u3
+	PORT: .a( g1779_da )
+	PORT: .b( g1779_db )
+	PORT: .o( n_455 )
+GATE: in01s01 g1780_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1780_sb )
+GATE: na02s01 g1780_u1
+	PORT: .a( DataOut_i_4_ )
+	PORT: .b( g1780_sb )
+	PORT: .o( g1780_da )
+GATE: na02s01 g1780_u2
+	PORT: .a( i_tx_phy_hold_reg_7 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1780_db )
+GATE: na02s01 g1780_u3
+	PORT: .a( g1780_da )
+	PORT: .b( g1780_db )
+	PORT: .o( n_454 )
+GATE: in01s01 g1781_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1781_sb )
+GATE: na02s01 g1781_u1
+	PORT: .a( DataOut_i_5_ )
+	PORT: .b( g1781_sb )
+	PORT: .o( g1781_da )
+GATE: na02s01 g1781_u2
+	PORT: .a( i_tx_phy_hold_reg_8 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1781_db )
+GATE: na02s01 g1781_u3
+	PORT: .a( g1781_da )
+	PORT: .b( g1781_db )
+	PORT: .o( n_453 )
+GATE: in01s01 g1782_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( g1782_sb )
+GATE: na02s01 g1782_u1
+	PORT: .a( DataOut_i_6_ )
+	PORT: .b( g1782_sb )
+	PORT: .o( g1782_da )
+GATE: na02s01 g1782_u2
+	PORT: .a( i_tx_phy_hold_reg_9 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( g1782_db )
+GATE: na02s01 g1782_u3
+	PORT: .a( g1782_da )
+	PORT: .b( g1782_db )
+	PORT: .o( n_452 )
+GATE: no02s01 g1806_u0
+	PORT: .a( n_232 )
+	PORT: .b( n_300 )
+	PORT: .o( n_369 )
+GATE: na02s01 g1807_u0
+	PORT: .a( n_142 )
+	PORT: .b( n_764 )
+	PORT: .o( n_347 )
+GATE: no02s01 g1808_u0
+	PORT: .a( n_307 )
+	PORT: .b( n_384 )
+	PORT: .o( n_368 )
+GATE: na02s01 g1809_u0
+	PORT: .a( n_198 )
+	PORT: .b( rst_cnt_3_ )
+	PORT: .o( n_292 )
+GATE: na02s01 g1810_u0
+	PORT: .a( n_197 )
+	PORT: .b( n_69 )
+	PORT: .o( n_256 )
+GATE: no02s01 g1811_u0
+	PORT: .a( n_377 )
+	PORT: .b( n_400 )
+	PORT: .o( n_415 )
+GATE: ao12s01 g1812_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_152 )
+	PORT: .c( n_375 )
+	PORT: .o( n_427 )
+GATE: na02s01 g1813_u0
+	PORT: .a( n_434 )
+	PORT: .b( DataOut_i_7_ )
+	PORT: .o( n_462 )
+GATE: na02s01 g1814_u0
+	PORT: .a( i_tx_phy_hold_reg_10 )
+	PORT: .b( i_tx_phy_ld_data )
+	PORT: .o( n_450 )
+GATE: ao12s01 g1815_u0
+	PORT: .a( n_400 )
+	PORT: .b( n_154 )
+	PORT: .c( n_341 )
+	PORT: .o( n_401 )
+GATE: na03s01 g1816_u0
+	PORT: .a( n_421 )
+	PORT: .b( n_435 )
+	PORT: .c( rst )
+	PORT: .o( n_449 )
+GATE: no02s01 g1817_u0
+	PORT: .a( n_666 )
+	PORT: .b( n_540 )
+	PORT: .o( n_413 )
+GATE: in01s01 g1819_u0
+	PORT: .a( n_426 )
+	PORT: .o( n_446 )
+GATE: na02s02 g1820_u0
+	PORT: .a( n_424 )
+	PORT: .b( n_666 )
+	PORT: .o( n_426 )
+GATE: ao12s01 g1821_u0
+	PORT: .a( n_181 )
+	PORT: .b( n_435 )
+	PORT: .c( n_389 )
+	PORT: .o( n_436 )
+GATE: no02s01 g1822_u0
+	PORT: .a( n_424 )
+	PORT: .b( n_665 )
+	PORT: .o( n_425 )
+GATE: na04s01 g1824_u0
+	PORT: .a( n_764 )
+	PORT: .b( i_rx_phy_bit_cnt_2_ )
+	PORT: .c( rst )
+	PORT: .d( n_141 )
+	PORT: .o( n_410 )
+GATE: in01s01 g1828_u0
+	PORT: .a( i_tx_phy_ld_data )
+	PORT: .o( n_434 )
+GATE: in01s01 g1830_u0
+	PORT: .a( i_rx_phy_rxdn_s )
+	PORT: .o( n_424 )
+GATE: ao12s01 g1837_u0
+	PORT: .a( n_181 )
+	PORT: .b( n_63 )
+	PORT: .c( n_968 )
+	PORT: .o( n_409 )
+GATE: ao12s01 g1838_u0
+	PORT: .a( n_416 )
+	PORT: .b( n_251 )
+	PORT: .c( n_268 )
+	PORT: .o( n_367 )
+GATE: ao12s01 g1840_u0
+	PORT: .a( n_322 )
+	PORT: .b( n_330 )
+	PORT: .c( n_952 )
+	PORT: .o( n_538 )
+GATE: ao12s01 g1841_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_355 )
+	PORT: .c( n_331 )
+	PORT: .o( n_407 )
+GATE: na02s01 g1842_u0
+	PORT: .a( n_308 )
+	PORT: .b( rst )
+	PORT: .o( n_366 )
+GATE: ao12s01 g1843_u0
+	PORT: .a( n_400 )
+	PORT: .b( n_332 )
+	PORT: .c( n_301 )
+	PORT: .o( n_395 )
+GATE: ao12s01 g1844_u0
+	PORT: .a( n_400 )
+	PORT: .b( n_344 )
+	PORT: .c( n_294 )
+	PORT: .o( n_394 )
+GATE: ao12s01 g1845_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_157 )
+	PORT: .c( n_352 )
+	PORT: .o( n_406 )
+GATE: ao12s01 g1846_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_354 )
+	PORT: .c( n_334 )
+	PORT: .o( n_405 )
+GATE: ao12s01 g1848_u0
+	PORT: .a( n_400 )
+	PORT: .b( n_161 )
+	PORT: .c( n_299 )
+	PORT: .o( n_378 )
+GATE: na02s01 g1849_u0
+	PORT: .a( n_138 )
+	PORT: .b( n_340 )
+	PORT: .o( n_342 )
+GATE: ao12s01 g1851_u0
+	PORT: .a( n_181 )
+	PORT: .b( n_267 )
+	PORT: .c( RxActive_o )
+	PORT: .o( n_365 )
+GATE: na02s01 g1852_u0
+	PORT: .a( n_304 )
+	PORT: .b( n_360 )
+	PORT: .o( n_392 )
+GATE: ao12s01 g1853_u0
+	PORT: .a( n_363 )
+	PORT: .b( n_153 )
+	PORT: .c( n_265 )
+	PORT: .o( n_364 )
+GATE: oa12s01 g1854_u0
+	PORT: .a( n_133 )
+	PORT: .b( n_231 )
+	PORT: .c( i_tx_phy_hold_reg_d_13 )
+	PORT: .o( n_232 )
+GATE: in01s01 g1855_u0
+	PORT: .a( n_274 )
+	PORT: .o( g1855_sb )
+GATE: na02s01 g1855_u1
+	PORT: .a( rst_cnt_4_ )
+	PORT: .b( g1855_sb )
+	PORT: .o( g1855_da )
+GATE: na02s01 g1855_u2
+	PORT: .a( n_11 )
+	PORT: .b( n_274 )
+	PORT: .o( g1855_db )
+GATE: na02s01 g1855_u3
+	PORT: .a( g1855_da )
+	PORT: .b( g1855_db )
+	PORT: .o( n_311 )
+GATE: ao12s01 g1856_u0
+	PORT: .a( n_339 )
+	PORT: .b( n_343 )
+	PORT: .c( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_377 )
+GATE: no02s01 g1857_u0
+	PORT: .a( n_155 )
+	PORT: .b( RxValid_o )
+	PORT: .o( g1857_p )
+GATE: in01s01 g1857_u1
+	PORT: .a( g1857_p )
+	PORT: .o( n_433 )
+GATE: na04s01 g1858_u0
+	PORT: .a( n_195 )
+	PORT: .b( n_238 )
+	PORT: .c( rst )
+	PORT: .d( i_tx_phy_txoe_r1 )
+	PORT: .o( n_276 )
+GATE: ao12s01 g1859_u0
+	PORT: .a( n_391 )
+	PORT: .b( n_88 )
+	PORT: .c( n_390 )
+	PORT: .o( n_421 )
+GATE: in01s01 g1860_u0
+	PORT: .a( n_197 )
+	PORT: .o( n_198 )
+GATE: no02s01 g1865_u0
+	PORT: .a( n_274 )
+	PORT: .b( n_11 )
+	PORT: .o( n_275 )
+GATE: na02s01 g1867_u0
+	PORT: .a( n_121 )
+	PORT: .b( n_958 )
+	PORT: .o( n_375 )
+GATE: na02s01 g1868_u0
+	PORT: .a( n_116 )
+	PORT: .b( n_340 )
+	PORT: .o( n_341 )
+GATE: no02s01 g1869_u0
+	PORT: .a( n_313 )
+	PORT: .b( n_416 )
+	PORT: .o( n_362 )
+GATE: ao12s01 g1870_u0
+	PORT: .a( n_343 )
+	PORT: .b( n_126 )
+	PORT: .c( n_231 )
+	PORT: .o( n_339 )
+GATE: na02s01 g1871_u0
+	PORT: .a( n_223 )
+	PORT: .b( i_rx_phy_rxdn_s_r )
+	PORT: .o( n_310 )
+GATE: na02s01 g1872_u0
+	PORT: .a( n_227 )
+	PORT: .b( i_rx_phy_rxdp_s_r )
+	PORT: .o( n_309 )
+GATE: na02s01 g1873_u0
+	PORT: .a( n_280 )
+	PORT: .b( n_273 )
+	PORT: .o( n_338 )
+GATE: no02s01 g1874_u0
+	PORT: .a( n_390 )
+	PORT: .b( n_389 )
+	PORT: .o( n_391 )
+GATE: na03s01 g1875_u0
+	PORT: .a( n_390 )
+	PORT: .b( i_rx_phy_dpll_state_1_ )
+	PORT: .c( n_60 )
+	PORT: .o( n_435 )
+GATE: na02s01 g1876_u0
+	PORT: .a( n_278 )
+	PORT: .b( n_297 )
+	PORT: .o( n_361 )
+GATE: ao12s01 g1877_u0
+	PORT: .a( n_228 )
+	PORT: .b( n_254 )
+	PORT: .c( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_337 )
+GATE: oa12s01 g1878_u0
+	PORT: .a( n_351 )
+	PORT: .b( n_290 )
+	PORT: .c( n_583 )
+	PORT: .o( n_387 )
+GATE: ao22s01 g1879_u0
+	PORT: .a( n_225 )
+	PORT: .b( i_tx_phy_sd_nrzi_o )
+	PORT: .c( n_873 )
+	PORT: .d( txdp )
+	PORT: .o( n_308 )
+GATE: na04s01 g1880_u0
+	PORT: .a( n_323 )
+	PORT: .b( n_350 )
+	PORT: .c( n_737 )
+	PORT: .d( n_108 )
+	PORT: .o( n_360 )
+GATE: no02s01 g1881_u0
+	PORT: .a( i_rx_phy_bit_cnt_2_ )
+	PORT: .b( n_141 )
+	PORT: .o( g1881_p )
+GATE: ao12s01 g1881_u1
+	PORT: .a( g1881_p )
+	PORT: .b( i_rx_phy_bit_cnt_2_ )
+	PORT: .c( n_141 )
+	PORT: .o( n_142 )
+GATE: ao12s01 g1882_u0
+	PORT: .a( n_230 )
+	PORT: .b( n_132 )
+	PORT: .c( n_306 )
+	PORT: .o( n_307 )
+GATE: no02s01 g1884_u0
+	PORT: .a( i_tx_phy_one_cnt_2_ )
+	PORT: .b( n_51 )
+	PORT: .o( g1884_p )
+GATE: ao12s01 g1884_u1
+	PORT: .a( g1884_p )
+	PORT: .b( i_tx_phy_one_cnt_2_ )
+	PORT: .c( n_51 )
+	PORT: .o( n_138 )
+GATE: na03s01 g1894_u0
+	PORT: .a( n_986 )
+	PORT: .b( n_170 )
+	PORT: .c( rst )
+	PORT: .o( n_273 )
+GATE: no02s01 g1896_u0
+	PORT: .a( n_132 )
+	PORT: .b( n_70 )
+	PORT: .o( n_197 )
+GATE: na02s01 g1897_u0
+	PORT: .a( n_764 )
+	PORT: .b( i_rx_phy_shift_en )
+	PORT: .o( g1897_u0_o )
+GATE: no02s01 g1899_u0
+	PORT: .a( n_258 )
+	PORT: .b( n_855 )
+	PORT: .o( n_340 )
+GATE: na02s01 g1900_u0
+	PORT: .a( n_118 )
+	PORT: .b( n_764 )
+	PORT: .o( n_334 )
+GATE: na02s01 g1901_u0
+	PORT: .a( n_764 )
+	PORT: .b( i_rx_phy_rx_valid1 )
+	PORT: .o( g1901_p )
+GATE: in01s01 g1901_u1
+	PORT: .a( g1901_p )
+	PORT: .o( n_373 )
+GATE: na02s01 g1902_u0
+	PORT: .a( i_rx_phy_bit_cnt_2_ )
+	PORT: .b( n_763 )
+	PORT: .o( n_359 )
+GATE: na02s01 g1903_u0
+	PORT: .a( n_289 )
+	PORT: .b( n_165 )
+	PORT: .o( n_304 )
+GATE: na02s01 g1904_u0
+	PORT: .a( n_283 )
+	PORT: .b( rst )
+	PORT: .o( n_333 )
+GATE: in01s01 g1905_u0
+	PORT: .a( n_416 )
+	PORT: .o( n_269 )
+GATE: na02s01 g1906_u0
+	PORT: .a( n_191 )
+	PORT: .b( rst )
+	PORT: .o( n_416 )
+GATE: na02s01 g1907_u0
+	PORT: .a( n_106 )
+	PORT: .b( n_103 )
+	PORT: .o( n_268 )
+GATE: no02s01 g1908_u0
+	PORT: .a( n_132 )
+	PORT: .b( n_306 )
+	PORT: .o( n_230 )
+GATE: na02s01 g1913_u0
+	PORT: .a( n_343 )
+	PORT: .b( i_tx_phy_bit_cnt_0_ )
+	PORT: .o( n_332 )
+GATE: na02s01 g1914_u0
+	PORT: .a( n_296 )
+	PORT: .b( n_56 )
+	PORT: .o( n_301 )
+GATE: na02s01 g1915_u0
+	PORT: .a( n_343 )
+	PORT: .b( n_15 )
+	PORT: .o( n_344 )
+GATE: na02s01 g1916_u0
+	PORT: .a( n_37 )
+	PORT: .b( n_764 )
+	PORT: .o( n_331 )
+GATE: na02s01 g1917_u0
+	PORT: .a( n_930 )
+	PORT: .b( n_841 )
+	PORT: .o( n_330 )
+GATE: na02s01 g1918_u0
+	PORT: .a( n_353 )
+	PORT: .b( n_763 )
+	PORT: .o( n_354 )
+GATE: na02s01 g1919_u0
+	PORT: .a( i_rx_phy_bit_cnt_0_ )
+	PORT: .b( n_763 )
+	PORT: .o( n_355 )
+GATE: no02s01 g1921_u0
+	PORT: .a( n_255 )
+	PORT: .b( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_300 )
+GATE: na02s01 g1922_u0
+	PORT: .a( n_71 )
+	PORT: .b( n_66 )
+	PORT: .o( n_274 )
+GATE: no02s01 g1923_u0
+	PORT: .a( n_312 )
+	PORT: .b( n_540 )
+	PORT: .o( g1923_p )
+GATE: in01s01 g1923_u1
+	PORT: .a( g1923_p )
+	PORT: .o( n_390 )
+GATE: na03s01 g1924_u0
+	PORT: .a( n_325 )
+	PORT: .b( n_53 )
+	PORT: .c( n_986 )
+	PORT: .o( n_352 )
+GATE: na03s01 g1925_u0
+	PORT: .a( n_350 )
+	PORT: .b( n_583 )
+	PORT: .c( n_800 )
+	PORT: .o( n_351 )
+GATE: na03s01 g1926_u0
+	PORT: .a( n_259 )
+	PORT: .b( n_50 )
+	PORT: .c( n_986 )
+	PORT: .o( n_299 )
+GATE: na03s01 g1927_u0
+	PORT: .a( n_296 )
+	PORT: .b( i_tx_phy_sd_raw_o )
+	PORT: .c( n_85 )
+	PORT: .o( n_297 )
+GATE: oa12s01 g1928_u0
+	PORT: .a( n_131 )
+	PORT: .b( n_127 )
+	PORT: .c( i_rx_phy_rxd_s1 )
+	PORT: .o( n_229 )
+GATE: na02s01 g1931_u0
+	PORT: .a( n_169 )
+	PORT: .b( n_296 )
+	PORT: .o( n_294 )
+GATE: oa12s01 g1932_u0
+	PORT: .a( n_193 )
+	PORT: .b( n_97 )
+	PORT: .c( n_804 )
+	PORT: .o( n_228 )
+GATE: ao22s01 g1933_u0
+	PORT: .a( n_122 )
+	PORT: .b( n_266 )
+	PORT: .c( n_150 )
+	PORT: .d( i_rx_phy_sd_nrzi )
+	PORT: .o( n_267 )
+GATE: oa12s01 g1934_u0
+	PORT: .a( n_184 )
+	PORT: .b( n_186 )
+	PORT: .c( n_48 )
+	PORT: .o( n_265 )
+GATE: in01s01 g1935_u0
+	PORT: .a( n_263 )
+	PORT: .o( n_293 )
+GATE: na04s01 g1936_u0
+	PORT: .a( n_182 )
+	PORT: .b( n_15 )
+	PORT: .c( i_tx_phy_bit_cnt_2_ )
+	PORT: .d( n_77 )
+	PORT: .o( n_263 )
+GATE: ao22s01 g1937_u0
+	PORT: .a( n_100 )
+	PORT: .b( n_885 )
+	PORT: .c( i_tx_phy_sd_nrzi_o )
+	PORT: .d( n_873 )
+	PORT: .o( n_195 )
+GATE: na02s01 g1942_u0
+	PORT: .a( i_tx_phy_data_done )
+	PORT: .b( n_937 )
+	PORT: .o( g1942_p )
+GATE: in01s01 g1942_u1
+	PORT: .a( g1942_p )
+	PORT: .o( n_350 )
+GATE: no02s01 g1950_u0
+	PORT: .a( n_210 )
+	PORT: .b( n_882 )
+	PORT: .o( n_296 )
+GATE: na02s01 g1951_u0
+	PORT: .a( n_182 )
+	PORT: .b( n_885 )
+	PORT: .o( n_343 )
+GATE: in01s01 g1952_u0
+	PORT: .a( n_324 )
+	PORT: .o( n_325 )
+GATE: na02s01 g1953_u0
+	PORT: .a( n_759 )
+	PORT: .b( i_rx_phy_sd_nrzi )
+	PORT: .o( n_324 )
+GATE: in01s01 g1954_u0
+	PORT: .a( n_258 )
+	PORT: .o( n_259 )
+GATE: na02s01 g1955_u0
+	PORT: .a( n_182 )
+	PORT: .b( i_tx_phy_sd_raw_o )
+	PORT: .o( n_258 )
+GATE: no02s01 g1956_u0
+	PORT: .a( n_929 )
+	PORT: .b( n_965 )
+	PORT: .o( n_323 )
+GATE: na02s01 g1958_u0
+	PORT: .a( n_574 )
+	PORT: .b( n_841 )
+	PORT: .o( n_257 )
+GATE: in01s01 g1959_u0
+	PORT: .a( n_573 )
+	PORT: .o( n_322 )
+GATE: no02s01 g1961_u0
+	PORT: .a( n_233 )
+	PORT: .b( n_318 )
+	PORT: .o( n_320 )
+GATE: no02s01 g1962_u0
+	PORT: .a( n_239 )
+	PORT: .b( n_318 )
+	PORT: .o( n_319 )
+GATE: no02s01 g1963_u0
+	PORT: .a( n_201 )
+	PORT: .b( n_318 )
+	PORT: .o( n_291 )
+GATE: in01s01 g1964_u0
+	PORT: .a( n_289 )
+	PORT: .o( n_290 )
+GATE: na02s01 g1965_u0
+	PORT: .a( n_965 )
+	PORT: .b( n_937 )
+	PORT: .o( g1965_p )
+GATE: in01s01 g1965_u1
+	PORT: .a( g1965_p )
+	PORT: .o( n_289 )
+GATE: no02s01 g1966_u0
+	PORT: .a( n_237 )
+	PORT: .b( n_318 )
+	PORT: .o( n_317 )
+GATE: no02s01 g1967_u0
+	PORT: .a( n_235 )
+	PORT: .b( n_363 )
+	PORT: .o( n_316 )
+GATE: no02s01 g1968_u0
+	PORT: .a( n_204 )
+	PORT: .b( n_363 )
+	PORT: .o( n_288 )
+GATE: na03s01 g1973_u0
+	PORT: .a( i_tx_phy_hold_reg_d_14 )
+	PORT: .b( n_192 )
+	PORT: .c( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_193 )
+GATE: in01s01 g1974_u0
+	PORT: .a( n_226 )
+	PORT: .o( n_227 )
+GATE: na02s01 g1975_u0
+	PORT: .a( i_rx_phy_rxdp_s0 )
+	PORT: .b( LineState_o_0_ )
+	PORT: .o( g1975_p )
+GATE: in01s01 g1975_u1
+	PORT: .a( g1975_p )
+	PORT: .o( n_226 )
+GATE: oa12s01 g1977_u0
+	PORT: .a( n_183 )
+	PORT: .b( n_185 )
+	PORT: .c( n_224 )
+	PORT: .o( n_225 )
+GATE: oa12s01 g1978_u0
+	PORT: .a( n_927 )
+	PORT: .b( n_952 )
+	PORT: .c( n_224 )
+	PORT: .o( n_539 )
+GATE: in01s01 g1979_u0
+	PORT: .a( n_222 )
+	PORT: .o( n_223 )
+GATE: na02s01 g1980_u0
+	PORT: .a( i_rx_phy_rxdn_s0 )
+	PORT: .b( LineState_o_1_ )
+	PORT: .o( g1980_p )
+GATE: in01s01 g1980_u1
+	PORT: .a( g1980_p )
+	PORT: .o( n_222 )
+GATE: no02s01 g1981_u0
+	PORT: .a( LineState_o_0_ )
+	PORT: .b( LineState_o_1_ )
+	PORT: .o( n_191 )
+GATE: na03s01 g1982_u0
+	PORT: .a( n_125 )
+	PORT: .b( i_tx_phy_hold_reg_d_17 )
+	PORT: .c( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_133 )
+GATE: ao12s01 g1983_u0
+	PORT: .a( n_167 )
+	PORT: .b( n_192 )
+	PORT: .c( i_tx_phy_hold_reg_d )
+	PORT: .o( n_255 )
+GATE: oa12s01 g1984_u0
+	PORT: .a( n_172 )
+	PORT: .b( i_tx_phy_hold_reg_d_15 )
+	PORT: .c( n_168 )
+	PORT: .o( n_254 )
+GATE: ao12s01 g1985_u0
+	PORT: .a( n_213 )
+	PORT: .b( n_852 )
+	PORT: .c( txoe )
+	PORT: .o( n_283 )
+GATE: ao12s01 g1986_u0
+	PORT: .a( n_241 )
+	PORT: .b( n_384 )
+	PORT: .c( n_240 )
+	PORT: .o( n_313 )
+GATE: na02s01 g1987_u0
+	PORT: .a( n_246 )
+	PORT: .b( n_245 )
+	PORT: .o( n_312 )
+GATE: in01s02 g1991_u0
+	PORT: .a( n_66 )
+	PORT: .o( n_132 )
+GATE: in01s01 g1998_u0
+	PORT: .a( n_949 )
+	PORT: .o( n_782 )
+GATE: na02s01 g2000_u0
+	PORT: .a( i_rx_phy_rxd_s0 )
+	PORT: .b( n_130 )
+	PORT: .o( n_131 )
+GATE: in01s01 g2003_u0
+	PORT: .a( n_982 )
+	PORT: .o( n_217 )
+GATE: no02s01 g2010_u0
+	PORT: .a( n_185 )
+	PORT: .b( i_tx_phy_sd_nrzi_o )
+	PORT: .o( n_186 )
+GATE: na02s01 g2011_u0
+	PORT: .a( n_384 )
+	PORT: .b( rst_cnt_4_ )
+	PORT: .o( n_252 )
+GATE: na02s01 g2012_u0
+	PORT: .a( n_224 )
+	PORT: .b( n_183 )
+	PORT: .o( n_184 )
+GATE: no03s01 g2014_u0
+	PORT: .a( i_tx_phy_txoe_r2 )
+	PORT: .b( i_tx_phy_txoe_r1 )
+	PORT: .c( n_864 )
+	PORT: .o( n_213 )
+GATE: na02s01 g2015_u0
+	PORT: .a( n_277 )
+	PORT: .b( n_48 )
+	PORT: .o( n_280 )
+GATE: na02s01 g2016_u0
+	PORT: .a( n_384 )
+	PORT: .b( n_105 )
+	PORT: .o( n_251 )
+GATE: in01s01 g2020_u0
+	PORT: .a( n_759 )
+	PORT: .o( n_248 )
+GATE: no02s01 g2024_u0
+	PORT: .a( i_rx_phy_rxd_s0 )
+	PORT: .b( n_130 )
+	PORT: .o( n_127 )
+GATE: in01s01 g2026_u0
+	PORT: .a( n_182 )
+	PORT: .o( n_210 )
+GATE: na02s01 g2027_u0
+	PORT: .a( n_55 )
+	PORT: .b( n_50 )
+	PORT: .o( n_182 )
+GATE: no02s01 g2028_u0
+	PORT: .a( n_244 )
+	PORT: .b( n_243 )
+	PORT: .o( g2028_p )
+GATE: in01s01 g2028_u1
+	PORT: .a( g2028_p )
+	PORT: .o( n_246 )
+GATE: na02s01 g2029_u0
+	PORT: .a( n_244 )
+	PORT: .b( n_243 )
+	PORT: .o( n_245 )
+GATE: na02s01 g2030_u0
+	PORT: .a( i_tx_phy_hold_reg_d_12 )
+	PORT: .b( n_124 )
+	PORT: .o( n_97 )
+GATE: no02s01 g2035_u0
+	PORT: .a( n_125 )
+	PORT: .b( n_124 )
+	PORT: .o( g2035_p )
+GATE: in01s01 g2035_u1
+	PORT: .a( g2035_p )
+	PORT: .o( n_126 )
+GATE: na02s01 g2036_u0
+	PORT: .a( n_125 )
+	PORT: .b( n_124 )
+	PORT: .o( n_231 )
+GATE: in01s01 g2038_u0
+	PORT: .a( n_604 )
+	PORT: .o( n_209 )
+GATE: no02s01 g2040_u0
+	PORT: .a( n_384 )
+	PORT: .b( n_240 )
+	PORT: .o( n_241 )
+GATE: in01s01 g2042_u0
+	PORT: .a( n_175 )
+	PORT: .o( n_176 )
+GATE: na02s01 g2043_u0
+	PORT: .a( n_948 )
+	PORT: .b( n_794 )
+	PORT: .o( n_175 )
+GATE: na02s01 g2048_u0
+	PORT: .a( n_277 )
+	PORT: .b( i_tx_phy_sd_bs_o )
+	PORT: .o( n_278 )
+GATE: no02s01 g2050_u0
+	PORT: .a( n_804 )
+	PORT: .b( n_785 )
+	PORT: .o( g2050_p )
+GATE: in01s01 g2050_u1
+	PORT: .a( g2050_p )
+	PORT: .o( n_172 )
+GATE: in01s01 g2051_u0
+	PORT: .a( n_123 )
+	PORT: .o( n_170 )
+GATE: ao12s01 g2052_u0
+	PORT: .a( i_tx_phy_append_eop_sync2 )
+	PORT: .b( n_7 )
+	PORT: .c( n_48 )
+	PORT: .o( n_123 )
+GATE: na02s01 g2053_u0
+	PORT: .a( n_804 )
+	PORT: .b( n_168 )
+	PORT: .o( n_169 )
+GATE: no02s01 g2054_u0
+	PORT: .a( n_168 )
+	PORT: .b( i_tx_phy_hold_reg_d_11 )
+	PORT: .o( n_167 )
+GATE: ao12s01 g2055_u0
+	PORT: .a( n_164 )
+	PORT: .b( n_10 )
+	PORT: .c( i_tx_phy_tx_ip )
+	PORT: .o( n_166 )
+GATE: ao12s01 g2056_u0
+	PORT: .a( n_164 )
+	PORT: .b( n_888 )
+	PORT: .c( n_737 )
+	PORT: .o( n_165 )
+GATE: no02s01 g2057_u0
+	PORT: .a( i_rx_phy_sd_r )
+	PORT: .b( n_243 )
+	PORT: .o( g2057_p )
+GATE: ao12s01 g2057_u1
+	PORT: .a( g2057_p )
+	PORT: .b( i_rx_phy_sd_r )
+	PORT: .c( n_243 )
+	PORT: .o( n_122 )
+GATE: oa12s01 g2058_u0
+	PORT: .a( n_35 )
+	PORT: .b( i_tx_phy_sd_bs_o )
+	PORT: .c( i_tx_phy_sd_nrzi_o )
+	PORT: .o( n_100 )
+GATE: ao22s01 g2059_u0
+	PORT: .a( i_tx_phy_tx_ip )
+	PORT: .b( n_885 )
+	PORT: .c( n_238 )
+	PORT: .d( n_855 )
+	PORT: .o( n_239 )
+GATE: ao22s01 g2060_u0
+	PORT: .a( i_tx_phy_append_eop )
+	PORT: .b( n_986 )
+	PORT: .c( i_tx_phy_append_eop_sync1 )
+	PORT: .d( n_855 )
+	PORT: .o( n_237 )
+GATE: ao22s01 g2061_u0
+	PORT: .a( i_tx_phy_append_eop_sync1 )
+	PORT: .b( n_885 )
+	PORT: .c( i_tx_phy_append_eop_sync2 )
+	PORT: .d( n_864 )
+	PORT: .o( n_235 )
+GATE: ao22s01 g2062_u0
+	PORT: .a( i_tx_phy_append_eop_sync4 )
+	PORT: .b( n_852 )
+	PORT: .c( n_48 )
+	PORT: .d( n_986 )
+	PORT: .o( n_204 )
+GATE: in01s01 g2063_u0
+	PORT: .a( n_852 )
+	PORT: .o( g2063_sb )
+GATE: na02s01 g2063_u1
+	PORT: .a( n_130 )
+	PORT: .b( g2063_sb )
+	PORT: .o( g2063_da )
+GATE: na02s01 g2063_u2
+	PORT: .a( i_rx_phy_sd_r )
+	PORT: .b( n_852 )
+	PORT: .o( g2063_db )
+GATE: na02s01 g2063_u3
+	PORT: .a( g2063_da )
+	PORT: .b( g2063_db )
+	PORT: .o( n_203 )
+GATE: ao22s01 g2064_u0
+	PORT: .a( i_tx_phy_txoe_r2 )
+	PORT: .b( n_852 )
+	PORT: .c( i_tx_phy_txoe_r1 )
+	PORT: .d( n_986 )
+	PORT: .o( n_201 )
+GATE: ao22s01 g2065_u0
+	PORT: .a( n_238 )
+	PORT: .b( n_986 )
+	PORT: .c( i_tx_phy_txoe_r1 )
+	PORT: .d( n_855 )
+	PORT: .o( n_233 )
+GATE: no02s01 g2066_u0
+	PORT: .a( n_105 )
+	PORT: .b( n_240 )
+	PORT: .o( g2066_p )
+GATE: ao12s01 g2066_u1
+	PORT: .a( g2066_p )
+	PORT: .b( n_105 )
+	PORT: .c( n_240 )
+	PORT: .o( n_106 )
+GATE: no02s01 g2067_u0
+	PORT: .a( n_120 )
+	PORT: .b( i_rx_phy_one_cnt_0_ )
+	PORT: .o( g2067_p )
+GATE: ao12s01 g2067_u1
+	PORT: .a( g2067_p )
+	PORT: .b( n_120 )
+	PORT: .c( i_rx_phy_one_cnt_0_ )
+	PORT: .o( n_121 )
+GATE: no02s01 g2068_u0
+	PORT: .a( n_353 )
+	PORT: .b( i_rx_phy_bit_cnt_0_ )
+	PORT: .o( g2068_p )
+GATE: ao12s01 g2068_u1
+	PORT: .a( g2068_p )
+	PORT: .b( n_353 )
+	PORT: .c( i_rx_phy_bit_cnt_0_ )
+	PORT: .o( n_118 )
+GATE: no02s01 g2069_u0
+	PORT: .a( n_115 )
+	PORT: .b( i_tx_phy_one_cnt_0_ )
+	PORT: .o( g2069_p )
+GATE: ao12s01 g2069_u1
+	PORT: .a( g2069_p )
+	PORT: .b( n_115 )
+	PORT: .c( i_tx_phy_one_cnt_0_ )
+	PORT: .o( n_116 )
+GATE: in01s01 g2072_u0
+	PORT: .a( i_tx_phy_sft_done_r )
+	PORT: .o( n_64 )
+GATE: in01s01 g2084_u0
+	PORT: .a( i_rx_phy_rxd_r )
+	PORT: .o( n_244 )
+GATE: na02s01 g2087_u0
+	PORT: .a( i_tx_phy_one_cnt_2_ )
+	PORT: .b( n_873 )
+	PORT: .o( n_163 )
+GATE: na02s01 g2088_u0
+	PORT: .a( i_tx_phy_one_cnt_0_ )
+	PORT: .b( n_873 )
+	PORT: .o( n_161 )
+GATE: na02s01 g2090_u0
+	PORT: .a( i_tx_phy_append_eop )
+	PORT: .b( n_12 )
+	PORT: .o( n_63 )
+GATE: no02s01 g2091_u0
+	PORT: .a( phy_tx_mode )
+	PORT: .b( n_855 )
+	PORT: .o( g2091_p )
+GATE: in01s01 g2091_u1
+	PORT: .a( g2091_p )
+	PORT: .o( n_183 )
+GATE: in01s01 g2092_u0
+	PORT: .a( n_111 )
+	PORT: .o( n_112 )
+GATE: na02s01 g2093_u0
+	PORT: .a( n_910 )
+	PORT: .b( n_91 )
+	PORT: .o( n_111 )
+GATE: in01s02 g2095_u0
+	PORT: .a( n_103 )
+	PORT: .o( n_384 )
+GATE: no02s01 g2096_u0
+	PORT: .a( n_984 )
+	PORT: .b( usb_rst )
+	PORT: .o( n_103 )
+GATE: na02s01 g2099_u0
+	PORT: .a( n_57 )
+	PORT: .b( i_tx_phy_bit_cnt_0_ )
+	PORT: .o( n_168 )
+GATE: na02s01 g20_u0
+	PORT: .a( n_852 )
+	PORT: .b( i_rx_phy_shift_en )
+	PORT: .o( n_991 )
+GATE: no02s01 g2100_u0
+	PORT: .a( n_878 )
+	PORT: .b( RxActive_o )
+	PORT: .o( n_61 )
+GATE: na02s01 g2103_u0
+	PORT: .a( rst )
+	PORT: .b( n_882 )
+	PORT: .o( g2103_p )
+GATE: in01s01 g2103_u1
+	PORT: .a( g2103_p )
+	PORT: .o( n_277 )
+GATE: na02s01 g2104_u0
+	PORT: .a( i_rx_phy_one_cnt_0_ )
+	PORT: .b( n_873 )
+	PORT: .o( n_157 )
+GATE: in01s01 g2106_u0
+	PORT: .a( n_598 )
+	PORT: .o( n_661 )
+GATE: na02s01 g2108_u0
+	PORT: .a( i_rx_phy_rx_valid_r )
+	PORT: .b( n_882 )
+	PORT: .o( g2108_p )
+GATE: in01s01 g2108_u1
+	PORT: .a( g2108_p )
+	PORT: .o( n_155 )
+GATE: na02s01 g2109_u0
+	PORT: .a( n_115 )
+	PORT: .b( n_873 )
+	PORT: .o( n_154 )
+GATE: na02s02 g2111_u0
+	PORT: .a( i_tx_phy_bit_cnt_1_ )
+	PORT: .b( n_56 )
+	PORT: .o( n_804 )
+GATE: in01s01 g2112_u0
+	PORT: .a( n_389 )
+	PORT: .o( n_81 )
+GATE: no02s01 g2113_u0
+	PORT: .a( i_rx_phy_dpll_state_1_ )
+	PORT: .b( n_60 )
+	PORT: .o( g2113_p )
+GATE: in01s01 g2113_u1
+	PORT: .a( g2113_p )
+	PORT: .o( n_389 )
+GATE: na02s01 g2114_u0
+	PORT: .a( n_852 )
+	PORT: .b( txdn )
+	PORT: .o( n_153 )
+GATE: na02s01 g2115_u0
+	PORT: .a( n_120 )
+	PORT: .b( n_873 )
+	PORT: .o( n_152 )
+GATE: na02s01 g2116_u0
+	PORT: .a( n_57 )
+	PORT: .b( n_56 )
+	PORT: .o( g2116_p )
+GATE: in01s01 g2116_u1
+	PORT: .a( g2116_p )
+	PORT: .o( n_192 )
+GATE: in01s01 g2117_u0
+	PORT: .a( n_164 )
+	PORT: .o( n_108 )
+GATE: na02s01 g2118_u0
+	PORT: .a( TxValid_i )
+	PORT: .b( rst )
+	PORT: .o( n_164 )
+GATE: in01s01 g2119_u0
+	PORT: .a( n_697 )
+	PORT: .o( n_90 )
+GATE: no02s01 g2122_u0
+	PORT: .a( n_52 )
+	PORT: .b( n_28 )
+	PORT: .o( n_58 )
+GATE: no02s01 g2123_u0
+	PORT: .a( n_57 )
+	PORT: .b( n_56 )
+	PORT: .o( n_125 )
+GATE: no02s01 g2124_u0
+	PORT: .a( i_rx_phy_dpll_state_1_ )
+	PORT: .b( i_rx_phy_dpll_state_0_ )
+	PORT: .o( n_88 )
+GATE: in01s01 g2127_u0
+	PORT: .a( n_400 )
+	PORT: .o( n_85 )
+GATE: no02s01 g2128_u0
+	PORT: .a( n_27 )
+	PORT: .b( n_318 )
+	PORT: .o( g2128_p )
+GATE: in01s01 g2128_u1
+	PORT: .a( g2128_p )
+	PORT: .o( n_400 )
+GATE: in01s01 g2129_u0
+	PORT: .a( n_150 )
+	PORT: .o( n_266 )
+GATE: no02s01 g2130_u0
+	PORT: .a( n_884 )
+	PORT: .b( n_509 )
+	PORT: .o( g2130_p )
+GATE: in01s01 g2130_u1
+	PORT: .a( g2130_p )
+	PORT: .o( n_150 )
+GATE: no02s01 g2131_u0
+	PORT: .a( n_70 )
+	PORT: .b( n_69 )
+	PORT: .o( n_71 )
+GATE: no02s01 g2135_u0
+	PORT: .a( n_37 )
+	PORT: .b( n_18 )
+	PORT: .o( n_141 )
+GATE: no02s01 g2136_u0
+	PORT: .a( n_21 )
+	PORT: .b( n_22 )
+	PORT: .o( n_66 )
+GATE: no02s01 g2137_u0
+	PORT: .a( n_53 )
+	PORT: .b( n_52 )
+	PORT: .o( n_54 )
+GATE: na02s01 g2138_u0
+	PORT: .a( i_tx_phy_sd_bs_o )
+	PORT: .b( i_tx_phy_sd_nrzi_o )
+	PORT: .o( n_35 )
+GATE: no02s01 g2139_u0
+	PORT: .a( n_50 )
+	PORT: .b( n_49 )
+	PORT: .o( n_51 )
+GATE: no02s01 g2140_u0
+	PORT: .a( n_49 )
+	PORT: .b( n_33 )
+	PORT: .o( n_55 )
+GATE: no02s01 g2141_u0
+	PORT: .a( n_8 )
+	PORT: .b( n_855 )
+	PORT: .o( g2141_p )
+GATE: in01s01 g2141_u1
+	PORT: .a( g2141_p )
+	PORT: .o( n_185 )
+GATE: in01s01 g2145_u0
+	PORT: .a( n_559 )
+	PORT: .o( n_48 )
+GATE: in01s01 g2149_u0
+	PORT: .a( n_306 )
+	PORT: .o( n_70 )
+GATE: in01s01 g2152_u0
+	PORT: .a( i_rx_phy_bit_cnt_0_ )
+	PORT: .o( n_37 )
+GATE: in01s01 g2155_u0
+	PORT: .a( i_tx_phy_one_cnt_0_ )
+	PORT: .o( n_50 )
+GATE: in01s01 g2157_u0
+	PORT: .a( i_rx_phy_dpll_state_0_ )
+	PORT: .o( n_60 )
+GATE: in01s01 g2158_u0
+	PORT: .a( phy_tx_mode )
+	PORT: .o( n_8 )
+GATE: in01s01 g2159_u0
+	PORT: .a( n_52 )
+	PORT: .o( n_120 )
+GATE: in01s01 g2160_u0
+	PORT: .a( i_rx_phy_one_cnt_1_ )
+	PORT: .o( n_52 )
+GATE: in01s01 g2161_u0
+	PORT: .a( i_tx_phy_append_eop_sync2 )
+	PORT: .o( n_12 )
+GATE: in01s01 g2162_u0
+	PORT: .a( rst_cnt_4_ )
+	PORT: .o( n_11 )
+GATE: in01s01 g2164_u0
+	PORT: .a( n_238 )
+	PORT: .o( n_27 )
+GATE: in01s01 g2172_u0
+	PORT: .a( n_22 )
+	PORT: .o( n_105 )
+GATE: in01s01 g2173_u0
+	PORT: .a( rst_cnt_1_ )
+	PORT: .o( n_22 )
+GATE: in01s01 g2174_u0
+	PORT: .a( i_tx_phy_append_eop_sync4 )
+	PORT: .o( n_7 )
+GATE: in01s01 g2178_u0
+	PORT: .a( n_56 )
+	PORT: .o( n_77 )
+GATE: in01s01 g2182_u0
+	PORT: .a( i_tx_phy_bit_cnt_0_ )
+	PORT: .o( n_56 )
+GATE: in01s01 g2183_u0
+	PORT: .a( n_57 )
+	PORT: .o( n_15 )
+GATE: in01s01 g2186_u0
+	PORT: .a( i_tx_phy_bit_cnt_1_ )
+	PORT: .o( n_57 )
+GATE: in01s01 g2190_u0
+	PORT: .a( RxActive_o )
+	PORT: .o( n_509 )
+GATE: in01s01 g2194_u0
+	PORT: .a( i_tx_phy_bit_cnt_2_ )
+	PORT: .o( n_124 )
+GATE: in01s04 g2195_u0
+	PORT: .a( rst )
+	PORT: .o( n_318 )
+GATE: in01s01 g2196_u0
+	PORT: .a( rst )
+	PORT: .o( n_363 )
+GATE: in01s01 g2209_u0
+	PORT: .a( rst )
+	PORT: .o( n_181 )
+GATE: in01s01 g2218_u0
+	PORT: .a( n_49 )
+	PORT: .o( n_115 )
+GATE: in01s01 g2219_u0
+	PORT: .a( i_tx_phy_one_cnt_1_ )
+	PORT: .o( n_49 )
+GATE: in01s01 g2224_u0
+	PORT: .a( n_28 )
+	PORT: .o( n_139 )
+GATE: in01s01 g2225_u0
+	PORT: .a( i_rx_phy_one_cnt_2_ )
+	PORT: .o( n_28 )
+GATE: in01s01 g2226_u0
+	PORT: .a( n_91 )
+	PORT: .o( n_74 )
+GATE: in01s01 g2227_u0
+	PORT: .a( n_980 )
+	PORT: .o( n_91 )
+GATE: in01s01 g2251_u0
+	PORT: .a( i_tx_phy_data_done )
+	PORT: .o( n_10 )
+GATE: in01s01 g2253_u0
+	PORT: .a( n_21 )
+	PORT: .o( n_240 )
+GATE: in01s01 g2254_u0
+	PORT: .a( rst_cnt_0_ )
+	PORT: .o( n_21 )
+GATE: in01s01 g2257_u0
+	PORT: .a( rst_cnt_3_ )
+	PORT: .o( n_69 )
+GATE: in01s01 g2258_u0
+	PORT: .a( i_rx_phy_se0_s )
+	PORT: .o( n_9 )
+GATE: in01s01 g2270_u0
+	PORT: .a( n_353 )
+	PORT: .o( n_18 )
+GATE: in01s01 g2272_u0
+	PORT: .a( i_tx_phy_one_cnt_2_ )
+	PORT: .o( n_33 )
+GATE: in01s01 g2273_u0
+	PORT: .a( n_243 )
+	PORT: .o( n_130 )
+GATE: in01s01 g2275_u0
+	PORT: .a( i_rx_phy_rxd_s )
+	PORT: .o( n_243 )
+GATE: in01s01 g2278_u0
+	PORT: .a( i_rx_phy_one_cnt_0_ )
+	PORT: .o( n_53 )
+GATE: in01s01 g22_u0
+	PORT: .a( n_852 )
+	PORT: .o( n_988 )
+GATE: na02s01 g2385_u0
+	PORT: .a( n_885 )
+	PORT: .b( n_559 )
+	PORT: .o( g2385_p )
+GATE: in01s01 g2385_u1
+	PORT: .a( g2385_p )
+	PORT: .o( n_567 )
+GATE: na02s01 g2389_u0
+	PORT: .a( n_840 )
+	PORT: .b( n_567 )
+	PORT: .o( n_573 )
+GATE: na02s01 g2390_u0
+	PORT: .a( n_972 )
+	PORT: .b( n_894 )
+	PORT: .o( n_574 )
+GATE: no02s01 g2392_u0
+	PORT: .a( n_932 )
+	PORT: .b( n_952 )
+	PORT: .o( n_590 )
+GATE: no02s01 g2397_u0
+	PORT: .a( n_952 )
+	PORT: .b( n_735 )
+	PORT: .o( n_598 )
+GATE: na02s01 g23_u0
+	PORT: .a( n_604 )
+	PORT: .b( n_926 )
+	PORT: .o( n_938 )
+GATE: na03s01 g2411_u0
+	PORT: .a( n_629 )
+	PORT: .b( n_631 )
+	PORT: .c( rst )
+	PORT: .o( n_632 )
+GATE: no02s01 g2412_u0
+	PORT: .a( n_481 )
+	PORT: .b( n_628 )
+	PORT: .o( g2412_p )
+GATE: in01s01 g2412_u1
+	PORT: .a( g2412_p )
+	PORT: .o( n_629 )
+GATE: no02s01 g2413_u0
+	PORT: .a( n_753 )
+	PORT: .b( n_727 )
+	PORT: .o( g2413_p )
+GATE: in01s01 g2413_u1
+	PORT: .a( g2413_p )
+	PORT: .o( n_628 )
+GATE: na02s01 g2415_u0
+	PORT: .a( n_753 )
+	PORT: .b( n_74 )
+	PORT: .o( n_631 )
+GATE: na02s01 g2431_u0
+	PORT: .a( n_749 )
+	PORT: .b( n_754 )
+	PORT: .o( n_660 )
+GATE: in01s01 g2438_u0
+	PORT: .a( n_666 )
+	PORT: .o( n_665 )
+GATE: in01s02 g2440_u0
+	PORT: .a( i_rx_phy_rxdp_s )
+	PORT: .o( n_666 )
+GATE: na02s01 g2459_u0
+	PORT: .a( n_910 )
+	PORT: .b( n_980 )
+	PORT: .o( n_697 )
+GATE: in01s01 g2460_u0
+	PORT: .a( n_703 )
+	PORT: .o( n_704 )
+GATE: na02s01 g2461_u0
+	PORT: .a( n_257 )
+	PORT: .b( n_929 )
+	PORT: .o( n_701 )
+GATE: na02s01 g2463_u0
+	PORT: .a( n_707 )
+	PORT: .b( n_708 )
+	PORT: .o( n_709 )
+GATE: na03s01 g2464_u0
+	PORT: .a( n_706 )
+	PORT: .b( n_461 )
+	PORT: .c( n_511 )
+	PORT: .o( n_707 )
+GATE: no02s01 g2465_u0
+	PORT: .a( n_318 )
+	PORT: .b( n_540 )
+	PORT: .o( n_706 )
+GATE: na02s01 g2466_u0
+	PORT: .a( n_461 )
+	PORT: .b( n_511 )
+	PORT: .o( n_710 )
+GATE: na02s01 g2477_u0
+	PORT: .a( n_741 )
+	PORT: .b( n_726 )
+	PORT: .o( n_727 )
+GATE: no02s01 g2479_u0
+	PORT: .a( n_788 )
+	PORT: .b( n_697 )
+	PORT: .o( n_722 )
+GATE: na03s01 g2482_u0
+	PORT: .a( n_439 )
+	PORT: .b( n_794 )
+	PORT: .c( n_90 )
+	PORT: .o( n_726 )
+GATE: in01s01 g2487_u0
+	PORT: .a( n_735 )
+	PORT: .o( n_734 )
+GATE: in01s02 g2491_u0
+	PORT: .a( n_735 )
+	PORT: .o( n_737 )
+GATE: na02s01 g2494_u0
+	PORT: .a( n_741 )
+	PORT: .b( n_742 )
+	PORT: .o( g2494_p )
+GATE: in01s01 g2494_u1
+	PORT: .a( g2494_p )
+	PORT: .o( n_743 )
+GATE: na02s01 g2495_u0
+	PORT: .a( n_467 )
+	PORT: .b( n_914 )
+	PORT: .o( n_742 )
+GATE: na03s01 g2497_u0
+	PORT: .a( n_112 )
+	PORT: .b( n_788 )
+	PORT: .c( n_942 )
+	PORT: .o( n_748 )
+GATE: in01s01 g24_u0
+	PORT: .a( n_941 )
+	PORT: .o( n_942 )
+GATE: ao12s01 g2501_u0
+	PORT: .a( n_318 )
+	PORT: .b( n_755 )
+	PORT: .c( n_756 )
+	PORT: .o( n_758 )
+GATE: oa12s01 g2502_u0
+	PORT: .a( n_754 )
+	PORT: .b( n_944 )
+	PORT: .c( n_752 )
+	PORT: .o( n_755 )
+GATE: na02s01 g2503_u0
+	PORT: .a( n_480 )
+	PORT: .b( n_742 )
+	PORT: .o( n_752 )
+GATE: in01s01 g2504_u0
+	PORT: .a( n_753 )
+	PORT: .o( n_754 )
+GATE: na03s01 g2505_u0
+	PORT: .a( n_61 )
+	PORT: .b( n_426 )
+	PORT: .c( n_9 )
+	PORT: .o( n_753 )
+GATE: no02s01 g2506_u0
+	PORT: .a( n_910 )
+	PORT: .b( n_460 )
+	PORT: .o( g2506_p )
+GATE: in01s01 g2506_u1
+	PORT: .a( g2506_p )
+	PORT: .o( n_756 )
+GATE: na03s01 g2508_u0
+	PORT: .a( n_763 )
+	PORT: .b( i_rx_phy_rx_valid1 )
+	PORT: .c( rst )
+	PORT: .o( n_767 )
+GATE: in01s02 g2511_u0
+	PORT: .a( n_763 )
+	PORT: .o( n_764 )
+GATE: na02s02 g2512_u0
+	PORT: .a( n_759 )
+	PORT: .b( n_885 )
+	PORT: .o( n_763 )
+GATE: na02s01 g2513_u0
+	PORT: .a( n_58 )
+	PORT: .b( n_53 )
+	PORT: .o( n_759 )
+GATE: in01s01 g2527_u0
+	PORT: .a( n_788 )
+	PORT: .o( n_786 )
+GATE: in01s01 g2537_u0
+	PORT: .a( n_965 )
+	PORT: .o( n_800 )
+GATE: in01s01 g2568_u0
+	PORT: .a( n_841 )
+	PORT: .o( n_840 )
+GATE: in01s02 g2573_u0
+	PORT: .a( n_986 )
+	PORT: .o( n_852 )
+GATE: in01s04 g2576_u0
+	PORT: .a( n_985 )
+	PORT: .o( n_855 )
+GATE: in01s01 g2584_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_864 )
+GATE: in01s02 g2593_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_873 )
+GATE: in01s01 g2595_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_878 )
+GATE: in01s01 g2599_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_882 )
+GATE: na03s01 g25_u0
+	PORT: .a( n_735 )
+	PORT: .b( n_952 )
+	PORT: .c( n_894 )
+	PORT: .o( n_841 )
+GATE: in01s01 g2601_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_884 )
+GATE: in01s02 g2604_u0
+	PORT: .a( n_929 )
+	PORT: .o( n_888 )
+GATE: in01s02 g2610_u0
+	PORT: .a( n_929 )
+	PORT: .o( n_894 )
+GATE: no02s01 g2620_u0
+	PORT: .a( n_923 )
+	PORT: .b( n_924 )
+	PORT: .o( n_925 )
+GATE: ao12s01 g2621_u0
+	PORT: .a( n_922 )
+	PORT: .b( n_915 )
+	PORT: .c( n_916 )
+	PORT: .o( n_923 )
+GATE: na02s01 g2622_u0
+	PORT: .a( n_920 )
+	PORT: .b( n_921 )
+	PORT: .o( n_922 )
+GATE: ao22s01 g2623_u0
+	PORT: .a( n_919 )
+	PORT: .b( n_945 )
+	PORT: .c( n_722 )
+	PORT: .d( n_916 )
+	PORT: .o( n_920 )
+GATE: ao22s01 g2624_u0
+	PORT: .a( n_927 )
+	PORT: .b( n_928 )
+	PORT: .c( n_934 )
+	PORT: .d( n_929 )
+	PORT: .o( n_935 )
+GATE: no02s01 g2625_u0
+	PORT: .a( n_888 )
+	PORT: .b( n_661 )
+	PORT: .o( n_927 )
+GATE: no02s01 g2626_u0
+	PORT: .a( n_224 )
+	PORT: .b( n_888 )
+	PORT: .o( n_928 )
+GATE: na02s01 g2627_u0
+	PORT: .a( n_930 )
+	PORT: .b( n_933 )
+	PORT: .o( n_934 )
+GATE: na04s01 g2628_u0
+	PORT: .a( n_735 )
+	PORT: .b( n_984 )
+	PORT: .c( n_952 )
+	PORT: .d( n_929 )
+	PORT: .o( n_930 )
+GATE: na02s01 g2630_u0
+	PORT: .a( n_965 )
+	PORT: .b( n_932 )
+	PORT: .o( n_933 )
+GATE: na02s01 g2632_u0
+	PORT: .a( n_64 )
+	PORT: .b( i_tx_phy_sft_done )
+	PORT: .o( n_932 )
+GATE: in01s01 g2634_u0
+	PORT: .a( n_932 )
+	PORT: .o( n_937 )
+GATE: na02s01 g2635_u0
+	PORT: .a( n_938 )
+	PORT: .b( n_943 )
+	PORT: .o( n_944 )
+GATE: na03s01 g2636_u0
+	PORT: .a( n_939 )
+	PORT: .b( n_940 )
+	PORT: .c( n_942 )
+	PORT: .o( n_943 )
+GATE: in01s01 g2637_u0
+	PORT: .a( n_794 )
+	PORT: .o( n_940 )
+GATE: na02s01 g2638_u0
+	PORT: .a( n_413 )
+	PORT: .b( n_424 )
+	PORT: .o( n_941 )
+GATE: no02s01 g2639_u0
+	PORT: .a( n_794 )
+	PORT: .b( n_111 )
+	PORT: .o( n_945 )
+GATE: no02s01 g2640_u0
+	PORT: .a( n_980 )
+	PORT: .b( n_947 )
+	PORT: .o( n_948 )
+GATE: in01s01 g2642_u0
+	PORT: .a( i_rx_phy_fs_state_2_ )
+	PORT: .o( n_947 )
+GATE: in01s01 g2643_u0
+	PORT: .a( n_796 )
+	PORT: .o( n_788 )
+GATE: no03s01 g2644_u0
+	PORT: .a( n_929 )
+	PORT: .b( n_952 )
+	PORT: .c( n_735 )
+	PORT: .o( n_583 )
+GATE: in01s02 g2645_u0
+	PORT: .a( n_951 )
+	PORT: .o( n_952 )
+GATE: in01s01 g2646_u0
+	PORT: .a( i_tx_phy_state_2_ )
+	PORT: .o( n_951 )
+GATE: in01s02 g2648_u0
+	PORT: .a( i_tx_phy_state_1_ )
+	PORT: .o( n_735 )
+GATE: ao12s01 g2650_u0
+	PORT: .a( n_961 )
+	PORT: .b( n_959 )
+	PORT: .c( n_960 )
+	PORT: .o( n_962 )
+GATE: no02s01 g2651_u0
+	PORT: .a( n_139 )
+	PORT: .b( n_54 )
+	PORT: .o( g2651_p )
+GATE: ao12s01 g2651_u1
+	PORT: .a( g2651_p )
+	PORT: .b( n_139 )
+	PORT: .c( n_54 )
+	PORT: .o( n_957 )
+GATE: no02s01 g2652_u0
+	PORT: .a( n_855 )
+	PORT: .b( n_324 )
+	PORT: .o( n_958 )
+GATE: na02s01 g2653_u0
+	PORT: .a( i_rx_phy_shift_en )
+	PORT: .b( rst )
+	PORT: .o( n_961 )
+GATE: na04s01 g2654_u0
+	PORT: .a( n_963 )
+	PORT: .b( n_966 )
+	PORT: .c( n_967 )
+	PORT: .d( n_968 )
+	PORT: .o( n_969 )
+GATE: oa12s01 g2655_u0
+	PORT: .a( n_965 )
+	PORT: .b( n_734 )
+	PORT: .c( n_937 )
+	PORT: .o( n_966 )
+GATE: na02s01 g2656_u0
+	PORT: .a( n_583 )
+	PORT: .b( n_737 )
+	PORT: .o( n_967 )
+GATE: ao12s01 g2657_u0
+	PORT: .a( n_318 )
+	PORT: .b( n_970 )
+	PORT: .c( n_974 )
+	PORT: .o( n_976 )
+GATE: na02s01 g2658_u0
+	PORT: .a( n_559 )
+	PORT: .b( i_tx_phy_tx_ip )
+	PORT: .o( n_970 )
+GATE: na03s01 g2660_u0
+	PORT: .a( n_972 )
+	PORT: .b( n_894 )
+	PORT: .c( TxValid_i )
+	PORT: .o( n_974 )
+GATE: in01s01 g2661_u0
+	PORT: .a( n_971 )
+	PORT: .o( n_972 )
+GATE: na02s02 g2662_u0
+	PORT: .a( n_735 )
+	PORT: .b( n_951 )
+	PORT: .o( n_971 )
+GATE: in01s01 g2664_u0
+	PORT: .a( n_974 )
+	PORT: .o( n_977 )
+GATE: no02s01 g2665_u0
+	PORT: .a( n_913 )
+	PORT: .b( n_981 )
+	PORT: .o( n_982 )
+GATE: in01s02 g2667_u0
+	PORT: .a( n_796 )
+	PORT: .o( n_794 )
+GATE: na02s01 g2668_u0
+	PORT: .a( n_980 )
+	PORT: .b( i_rx_phy_fs_state_2_ )
+	PORT: .o( n_981 )
+GATE: in01s02 g2669_u0
+	PORT: .a( i_rx_phy_fs_state_0_ )
+	PORT: .o( n_980 )
+GATE: in01s01 g2670_u0
+	PORT: .a( i_rx_phy_fs_state_2_ )
+	PORT: .o( n_910 )
+GATE: na02s02 g2671_u0
+	PORT: .a( n_990 )
+	PORT: .b( n_991 )
+	PORT: .o( n_992 )
+GATE: na02s02 g2672_u0
+	PORT: .a( n_988 )
+	PORT: .b( n_989 )
+	PORT: .o( n_990 )
+GATE: in01s02 g2674_u0
+	PORT: .a( n_985 )
+	PORT: .o( g2674_p )
+GATE: in01s08 g2674_u1
+	PORT: .a( g2674_p )
+	PORT: .o( n_986 )
+GATE: in01s02 g2675_u0
+	PORT: .a( n_984 )
+	PORT: .o( n_985 )
+GATE: in01s02 g2676_u0
+	PORT: .a( n_885 )
+	PORT: .o( n_984 )
+GATE: na02s01 g2677_u0
+	PORT: .a( n_710 )
+	PORT: .b( n_509 )
+	PORT: .o( n_989 )
+GATE: na03s01 g26_u0
+	PORT: .a( n_443 )
+	PORT: .b( RxActive_o )
+	PORT: .c( rst )
+	PORT: .o( n_708 )
+GATE: in01s01 g27_u0
+	PORT: .a( n_224 )
+	PORT: .o( n_559 )
+GATE: in01s01 g28_u0
+	PORT: .a( n_111 )
+	PORT: .o( n_939 )
+GATE: na02s01 g31_u0
+	PORT: .a( n_957 )
+	PORT: .b( n_958 )
+	PORT: .o( n_959 )
+GATE: na03s01 g32_u0
+	PORT: .a( n_743 )
+	PORT: .b( n_938 )
+	PORT: .c( n_748 )
+	PORT: .o( n_749 )
+GATE: no02s01 g33_u0
+	PORT: .a( i_tx_phy_data_done )
+	PORT: .b( n_929 )
+	PORT: .o( n_593 )
+GATE: na02s01 g34_u0
+	PORT: .a( n_873 )
+	PORT: .b( n_139 )
+	PORT: .o( n_960 )
+GATE: na02s01 g35_u0
+	PORT: .a( n_722 )
+	PORT: .b( n_926 )
+	PORT: .o( n_741 )
+GATE: na04s01 g36_u0
+	PORT: .a( n_699 )
+	PORT: .b( n_700 )
+	PORT: .c( n_701 )
+	PORT: .d( n_968 )
+	PORT: .o( n_703 )
+GATE: ao12s01 g39_u0
+	PORT: .a( n_977 )
+	PORT: .b( n_840 )
+	PORT: .c( n_567 )
+	PORT: .o( n_699 )
+GATE: na03s01 g40_u0
+	PORT: .a( n_559 )
+	PORT: .b( n_734 )
+	PORT: .c( n_927 )
+	PORT: .o( n_963 )
+GATE: no02s01 g41_u0
+	PORT: .a( n_588 )
+	PORT: .b( n_888 )
+	PORT: .o( g41_p )
+GATE: in01s01 g41_u1
+	PORT: .a( g41_p )
+	PORT: .o( n_700 )
+GATE: na03s01 g42_u0
+	PORT: .a( n_737 )
+	PORT: .b( n_593 )
+	PORT: .c( n_590 )
+	PORT: .o( n_968 )
+GATE: no02s01 g44_u0
+	PORT: .a( n_971 )
+	PORT: .b( n_894 )
+	PORT: .o( n_965 )
+GATE: in01s01 g51_u0
+	PORT: .a( n_583 )
+	PORT: .o( n_588 )
+GATE: na03s01 g54_u0
+	PORT: .a( n_492 )
+	PORT: .b( n_217 )
+	PORT: .c( n_209 )
+	PORT: .o( n_915 )
+GATE: in01s02 g56_u0
+	PORT: .a( n_916 )
+	PORT: .o( n_926 )
+GATE: na03s01 g57_u0
+	PORT: .a( n_666 )
+	PORT: .b( i_rx_phy_rxdn_s )
+	PORT: .c( i_rx_phy_rx_en )
+	PORT: .o( n_916 )
+GATE: na03s01 g58_u0
+	PORT: .a( n_788 )
+	PORT: .b( n_112 )
+	PORT: .c( n_919 )
+	PORT: .o( n_921 )
+GATE: in01s01 g61_u0
+	PORT: .a( n_942 )
+	PORT: .o( n_919 )
+GATE: na02s01 g64_u0
+	PORT: .a( n_754 )
+	PORT: .b( n_509 )
+	PORT: .o( n_924 )
+GATE: ms00f80 i_rx_phy_bit_cnt_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_407 )
+	PORT: .o( i_rx_phy_bit_cnt_0_ )
+GATE: ms00f80 i_rx_phy_bit_cnt_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_405 )
+	PORT: .o( n_353 )
+GATE: ms00f80 i_rx_phy_bit_cnt_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_414 )
+	PORT: .o( i_rx_phy_bit_cnt_2_ )
+GATE: ms00f80 i_rx_phy_bit_stuff_err_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_505 )
+	PORT: .o( i_rx_phy_bit_stuff_err_reg_Q )
+GATE: in01s01 i_rx_phy_bit_stuff_err_reg_u1
+	PORT: .a( i_rx_phy_bit_stuff_err_reg_Q )
+	PORT: .o( i_rx_phy_bit_stuff_err )
+GATE: ms00f80 i_rx_phy_byte_err_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_499 )
+	PORT: .o( i_rx_phy_byte_err_reg_Q )
+GATE: in01s01 i_rx_phy_byte_err_reg_u1
+	PORT: .a( i_rx_phy_byte_err_reg_Q )
+	PORT: .o( i_rx_phy_byte_err )
+GATE: ms00f80 i_rx_phy_dpll_state_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_449 )
+	PORT: .o( i_rx_phy_dpll_state_0_ )
+GATE: ms00f80 i_rx_phy_dpll_state_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_436 )
+	PORT: .o( i_rx_phy_dpll_state_1_ )
+GATE: ms00f80 i_rx_phy_fs_ce_r1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_81 )
+	PORT: .o( i_rx_phy_fs_ce_r1 )
+GATE: ms00f80 i_rx_phy_fs_ce_r2_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_fs_ce_r1 )
+	PORT: .o( i_rx_phy_fs_ce_r2 )
+GATE: ms00f80 i_rx_phy_fs_ce_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_fs_ce_r2 )
+	PORT: .o( n_885 )
+GATE: ms00f80 i_rx_phy_fs_state_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_529 )
+	PORT: .o( i_rx_phy_fs_state_0_ )
+GATE: ms00f80 i_rx_phy_fs_state_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_523 )
+	PORT: .o( n_796 )
+GATE: ms00f80 i_rx_phy_fs_state_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_758 )
+	PORT: .o( i_rx_phy_fs_state_2_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_1_ )
+	PORT: .o( DataIn_o_0_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_2_ )
+	PORT: .o( DataIn_o_1_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_3_ )
+	PORT: .o( DataIn_o_2_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_3__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_4_ )
+	PORT: .o( DataIn_o_3_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_4__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_5_ )
+	PORT: .o( DataIn_o_4_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_5__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_6_ )
+	PORT: .o( DataIn_o_5_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_6__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( DataIn_o_7_ )
+	PORT: .o( DataIn_o_6_ )
+GATE: ms00f80 i_rx_phy_hold_reg_reg_7__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_sd_nrzi )
+	PORT: .o( DataIn_o_7_ )
+GATE: ms00f80 i_rx_phy_one_cnt_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_406 )
+	PORT: .o( i_rx_phy_one_cnt_0_ )
+GATE: ms00f80 i_rx_phy_one_cnt_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_427 )
+	PORT: .o( i_rx_phy_one_cnt_1_ )
+GATE: ms00f80 i_rx_phy_one_cnt_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_962 )
+	PORT: .o( i_rx_phy_one_cnt_2_ )
+GATE: ms00f80 i_rx_phy_rx_active_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_709 )
+	PORT: .o( RxActive_o )
+GATE: ms00f80 i_rx_phy_rx_en_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( txoe )
+	PORT: .o( i_rx_phy_rx_en )
+GATE: ms00f80 i_rx_phy_rx_valid1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_431 )
+	PORT: .o( i_rx_phy_rx_valid1 )
+GATE: ms00f80 i_rx_phy_rx_valid_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_433 )
+	PORT: .o( i_rx_phy_rx_valid_r )
+GATE: ms00f80 i_rx_phy_rx_valid_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_373 )
+	PORT: .o( RxValid_o )
+GATE: ms00f80 i_rx_phy_rxd_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_130 )
+	PORT: .o( i_rx_phy_rxd_r )
+GATE: ms00f80 i_rx_phy_rxd_s0_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( rxd )
+	PORT: .o( i_rx_phy_rxd_s0 )
+GATE: ms00f80 i_rx_phy_rxd_s1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_rxd_s0 )
+	PORT: .o( i_rx_phy_rxd_s1_reg_Q )
+GATE: in01s01 i_rx_phy_rxd_s1_reg_u1
+	PORT: .a( i_rx_phy_rxd_s1_reg_Q )
+	PORT: .o( i_rx_phy_rxd_s1 )
+GATE: ms00f80 i_rx_phy_rxd_s_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_229 )
+	PORT: .o( i_rx_phy_rxd_s )
+GATE: ms00f80 i_rx_phy_rxdn_s0_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( rxdn )
+	PORT: .o( i_rx_phy_rxdn_s0 )
+GATE: ms00f80 i_rx_phy_rxdn_s1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_rxdn_s0 )
+	PORT: .o( LineState_o_1_ )
+GATE: ms00f80 i_rx_phy_rxdn_s_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_222 )
+	PORT: .o( i_rx_phy_rxdn_s_r_reg_Q )
+GATE: in01s01 i_rx_phy_rxdn_s_r_reg_u1
+	PORT: .a( i_rx_phy_rxdn_s_r_reg_Q )
+	PORT: .o( i_rx_phy_rxdn_s_r )
+GATE: ms00f80 i_rx_phy_rxdn_s_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_310 )
+	PORT: .o( i_rx_phy_rxdn_s )
+GATE: ms00f80 i_rx_phy_rxdp_s0_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( rxdp )
+	PORT: .o( i_rx_phy_rxdp_s0 )
+GATE: ms00f80 i_rx_phy_rxdp_s1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_rx_phy_rxdp_s0 )
+	PORT: .o( LineState_o_0_ )
+GATE: ms00f80 i_rx_phy_rxdp_s_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_226 )
+	PORT: .o( i_rx_phy_rxdp_s_r_reg_Q )
+GATE: in01s01 i_rx_phy_rxdp_s_r_reg_u1
+	PORT: .a( i_rx_phy_rxdp_s_r_reg_Q )
+	PORT: .o( i_rx_phy_rxdp_s_r )
+GATE: ms00f80 i_rx_phy_rxdp_s_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_309 )
+	PORT: .o( i_rx_phy_rxdp_s )
+GATE: ms00f80 i_rx_phy_sd_nrzi_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_365 )
+	PORT: .o( i_rx_phy_sd_nrzi )
+GATE: ms00f80 i_rx_phy_sd_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_203 )
+	PORT: .o( i_rx_phy_sd_r )
+GATE: ms00f80 i_rx_phy_se0_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_446 )
+	PORT: .o( i_rx_phy_se0_r_reg_Q )
+GATE: in01s01 i_rx_phy_se0_r_reg_u1
+	PORT: .a( i_rx_phy_se0_r_reg_Q )
+	PORT: .o( i_rx_phy_se0_r )
+GATE: ms00f80 i_rx_phy_se0_s_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_471 )
+	PORT: .o( i_rx_phy_se0_s )
+GATE: ms00f80 i_rx_phy_shift_en_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_992 )
+	PORT: .o( i_rx_phy_shift_en )
+GATE: ms00f80 i_rx_phy_sync_err_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_925 )
+	PORT: .o( i_rx_phy_sync_err_reg_Q )
+GATE: in01s01 i_rx_phy_sync_err_reg_u1
+	PORT: .a( i_rx_phy_sync_err_reg_Q )
+	PORT: .o( i_rx_phy_sync_err )
+GATE: ms00f80 i_tx_phy_TxReady_o_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_392 )
+	PORT: .o( TxReady_o )
+GATE: ms00f80 i_tx_phy_append_eop_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_409 )
+	PORT: .o( i_tx_phy_append_eop )
+GATE: ms00f80 i_tx_phy_append_eop_sync1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_317 )
+	PORT: .o( i_tx_phy_append_eop_sync1 )
+GATE: ms00f80 i_tx_phy_append_eop_sync2_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_316 )
+	PORT: .o( i_tx_phy_append_eop_sync2 )
+GATE: ms00f80 i_tx_phy_append_eop_sync3_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_338 )
+	PORT: .o( n_224 )
+GATE: ms00f80 i_tx_phy_append_eop_sync4_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_288 )
+	PORT: .o( i_tx_phy_append_eop_sync4 )
+GATE: ms00f80 i_tx_phy_bit_cnt_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_395 )
+	PORT: .o( i_tx_phy_bit_cnt_0_ )
+GATE: ms00f80 i_tx_phy_bit_cnt_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_394 )
+	PORT: .o( i_tx_phy_bit_cnt_1_ )
+GATE: ms00f80 i_tx_phy_bit_cnt_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_415 )
+	PORT: .o( i_tx_phy_bit_cnt_2_ )
+GATE: ms00f80 i_tx_phy_data_done_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_166 )
+	PORT: .o( i_tx_phy_data_done )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg )
+	PORT: .o( i_tx_phy_hold_reg_d )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_4 )
+	PORT: .o( i_tx_phy_hold_reg_d_reg_1__Q )
+GATE: in01s01 i_tx_phy_hold_reg_d_reg_1__u1
+	PORT: .a( i_tx_phy_hold_reg_d_reg_1__Q )
+	PORT: .o( i_tx_phy_hold_reg_d_11 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_5 )
+	PORT: .o( i_tx_phy_hold_reg_d_12 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_3__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_6 )
+	PORT: .o( i_tx_phy_hold_reg_d_reg_3__Q )
+GATE: in01s01 i_tx_phy_hold_reg_d_reg_3__u1
+	PORT: .a( i_tx_phy_hold_reg_d_reg_3__Q )
+	PORT: .o( i_tx_phy_hold_reg_d_13 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_4__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_7 )
+	PORT: .o( i_tx_phy_hold_reg_d_14 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_5__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_8 )
+	PORT: .o( i_tx_phy_hold_reg_d_reg_5__Q )
+GATE: in01s01 i_tx_phy_hold_reg_d_reg_5__u1
+	PORT: .a( i_tx_phy_hold_reg_d_reg_5__Q )
+	PORT: .o( i_tx_phy_hold_reg_d_15 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_6__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_9 )
+	PORT: .o( i_tx_phy_hold_reg_d_reg_6__Q )
+GATE: in01s01 i_tx_phy_hold_reg_d_reg_6__u1
+	PORT: .a( i_tx_phy_hold_reg_d_reg_6__Q )
+	PORT: .o( n_785 )
+GATE: ms00f80 i_tx_phy_hold_reg_d_reg_7__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_hold_reg_10 )
+	PORT: .o( i_tx_phy_hold_reg_d_17 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_489 )
+	PORT: .o( i_tx_phy_hold_reg )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_487 )
+	PORT: .o( i_tx_phy_hold_reg_4 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_486 )
+	PORT: .o( i_tx_phy_hold_reg_5 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_3__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_485 )
+	PORT: .o( i_tx_phy_hold_reg_6 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_4__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_484 )
+	PORT: .o( i_tx_phy_hold_reg_7 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_5__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_483 )
+	PORT: .o( i_tx_phy_hold_reg_8 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_6__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_482 )
+	PORT: .o( i_tx_phy_hold_reg_9 )
+GATE: ms00f80 i_tx_phy_hold_reg_reg_7__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_507 )
+	PORT: .o( i_tx_phy_hold_reg_10 )
+GATE: ms00f80 i_tx_phy_ld_data_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_387 )
+	PORT: .o( i_tx_phy_ld_data_reg_Q )
+GATE: in01s01 i_tx_phy_ld_data_reg_u1
+	PORT: .a( i_tx_phy_ld_data_reg_Q )
+	PORT: .o( i_tx_phy_ld_data )
+GATE: ms00f80 i_tx_phy_one_cnt_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_378 )
+	PORT: .o( i_tx_phy_one_cnt_0_ )
+GATE: ms00f80 i_tx_phy_one_cnt_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_401 )
+	PORT: .o( i_tx_phy_one_cnt_1_ )
+GATE: ms00f80 i_tx_phy_one_cnt_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_388 )
+	PORT: .o( i_tx_phy_one_cnt_2_ )
+GATE: ms00f80 i_tx_phy_sd_bs_o_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_361 )
+	PORT: .o( i_tx_phy_sd_bs_o )
+GATE: ms00f80 i_tx_phy_sd_nrzi_o_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_276 )
+	PORT: .o( i_tx_phy_sd_nrzi_o )
+GATE: ms00f80 i_tx_phy_sd_raw_o_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_411 )
+	PORT: .o( i_tx_phy_sd_raw_o )
+GATE: ms00f80 i_tx_phy_sft_done_r_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( i_tx_phy_sft_done )
+	PORT: .o( i_tx_phy_sft_done_r )
+GATE: ms00f80 i_tx_phy_sft_done_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_293 )
+	PORT: .o( i_tx_phy_sft_done )
+GATE: ms00f80 i_tx_phy_state_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_459 )
+	PORT: .o( n_929 )
+GATE: ms00f80 i_tx_phy_state_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_420 )
+	PORT: .o( i_tx_phy_state_1_ )
+GATE: ms00f80 i_tx_phy_state_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_432 )
+	PORT: .o( i_tx_phy_state_2_ )
+GATE: ms00f80 i_tx_phy_tx_ip_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_976 )
+	PORT: .o( i_tx_phy_tx_ip )
+GATE: ms00f80 i_tx_phy_tx_ip_sync_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_319 )
+	PORT: .o( n_238 )
+GATE: ms00f80 i_tx_phy_txdn_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_364 )
+	PORT: .o( txdn )
+GATE: ms00f80 i_tx_phy_txdp_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_366 )
+	PORT: .o( txdp )
+GATE: ms00f80 i_tx_phy_txoe_r1_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_320 )
+	PORT: .o( i_tx_phy_txoe_r1 )
+GATE: ms00f80 i_tx_phy_txoe_r2_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_291 )
+	PORT: .o( i_tx_phy_txoe_r2 )
+GATE: ms00f80 i_tx_phy_txoe_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_333 )
+	PORT: .o( txoe )
+GATE: ms00f80 rst_cnt_reg_0__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_362 )
+	PORT: .o( rst_cnt_0_ )
+GATE: ms00f80 rst_cnt_reg_1__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_367 )
+	PORT: .o( rst_cnt_1_ )
+GATE: ms00f80 rst_cnt_reg_2__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_428 )
+	PORT: .o( n_306 )
+GATE: ms00f80 rst_cnt_reg_3__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_417 )
+	PORT: .o( rst_cnt_3_ )
+GATE: ms00f80 rst_cnt_reg_4__u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_423 )
+	PORT: .o( rst_cnt_4_ )
+GATE: ms00f80 usb_rst_reg_u0
+	PORT: .ck( ispd_clk )
+	PORT: .d( n_275 )
+	PORT: .o( usb_rst )
+END MODULE
